@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "id": "project",
+  "properties": {
+      "title": {
+          "type": "string",
+          "title": "Title",
+          "id": "title"
+      },
+      "date": {
+        "type": "string",
+        "title": "Date",
+        "id": "date"
+      },
+      "company": {
+          "type": "string",
+          "title": "Company",
+          "id": "company"
+      },
+      "assessments": {
+          "type": "string",
+          "title": "Select Assessment",
+          "id": "assessments",
+          "class": "multiple assessment-select",
+          "enum": [
+            " "
+          ]
+      },
+      "workers": {
+          "type": "string",
+          "title": "Select Workers",
+          "id": "workers",
+          "class": "multiple workers-select",
+          "enum": [
+            " " 
+          ]
+      }
+ }
+}

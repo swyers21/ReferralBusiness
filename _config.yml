@@ -3,7 +3,7 @@ theme: jekyll-theme-cayman
 # Welcome to Jekyll!
 #App settings
 destination: public
-# source: src/jekyll
+source: src/jekyll
 exclude: ['node_modules']
 
 # Site settings

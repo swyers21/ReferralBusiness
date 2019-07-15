@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <!-- <app-head></app-head> -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> settings </title>
+  <meta name="description" content="Chemical Exposure Application
+">
+  <!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="canonical" href="http://localhost:4000/editor/settings.html">
+  <link rel="stylesheet" href="/webpack/styles.css" rel="prefetch" />
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+  <link rel="alternate" type="application/rss+xml" title="TeraChain" href="http://localhost:4000/feed.xml">
+  <link rel="dns-prefetch" href="http://localhost:4000">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#2e2e2e">
+  <meta name="msapplication-TileImage" content="/images/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <!-- navbar content here  -->
+<nav >
+  <div class="nav-wrapper z-depth-3">
+    <!-- <img src="/images/logo.png" alt="TeraChain logo" /> -->
+    <span class="logo icon-globe fa-3x hide-on-small-only left"></span>
+    <h1><a href="/index.html">TeraChain</a></h1>
+
+    <ul id="nav-mobile" class="right ">
+      <li data-target="slide-out" class="sidenav-trigger">
+        <a href="#" class="hide-on-small-only">Menu</a>
+         <i class="icon-menu"></i>
+      </li>
+      <li class="inactive">
+        <a href="/dashboard/"  >
+          <i class="icon-dashboard inline-block"></i>
+          <span class="hide-on-small-only inline-block">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+  <ul id="slide-out" class="sidenav">
+    <header>
+        <!-- <li><div class="user-view">
+          <div class="background">
+            <img src="images/office.jpg">
+          </div>
+          <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+          <a href="#name"><span class="white-text name">John Doe</span></a>
+          <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+        </div></li> -->
+    </header>
+    <ul class="logg edin">
+      <li>
+        <a class="waves-effect" href="/" aria-selected="true">
+        <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">arrow_right</i> -->
+        <span class="mdc-list-item__text">Home</span>
+        </a>
+      </li>
+      
+        
+      
+        
+          
+           <li>
+             <a class="waves-effect" href="/about/" aria-selected="true">
+               <i class="icon-info"></i>
+               <span class="mdc-list-item__text  "> About Us </span>
+             </a>
+           </li>
+           
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+           <li>
+             <a class="waves-effect" href="/contact/" aria-selected="true">
+               <i class="icon-phone1"></i>
+               <span class="mdc-list-item__text  "> Contact Us </span>
+             </a>
+           </li>
+           
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+           <li>
+             <a class="waves-effect" href="/login/" aria-selected="true">
+               <i class="icon-input"></i>
+               <span class="mdc-list-item__text  "> Login </span>
+             </a>
+           </li>
+           
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+           <li>
+             <a class="waves-effect" href="/register/" aria-selected="true">
+               <i class="icon-input"></i>
+               <span class="mdc-list-item__text  "> Sign Up </span>
+             </a>
+           </li>
+           
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    </ul>
+    <li><div class="divider"></div></li>
+    <ul class="services hide">
+      <li><a class="subheader"> <i class="icon-nature_people"></i> Services </a></li>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+    </ul>
+
+  <footer>
+    <!-- <a class="mdc-list-item" href="tel:1-800-TERA" aria-selected="true">
+      <i class="material-icons mdc-list-item__graphic" aria-hidden="true">arrow_right</i>
+      <span class="mdc-list-item__text"> Hire Us 1-800-TERA </span>
+    </a> -->
+  </footer>
+</ul>
+
+    <article id="main">
+  <!-- 
+<section class="breadcrumb">
+  <div class="inner">
+    <ul class="inactive">
+        <li>
+          
+            <a href="/dashboard/">Dashboard</a>
+          
+            
+              /
+              <a href="
+                /
+
+                editor/
+
+                ">
+                Editor
+              </a>
+            
+          
+            
+              / Settings
+            
+          
+        </li>
+    </ul>
+  </div>
+</section>
+ -->
+  <section class="container">
+    <div class="inner">
+			<h2  >settings</h2>
+			<hr />
+      <h1>Advanced JSON Editor Example</h1>
+
+<p>This example demonstrates the following:</p>
+<ul>
+  <li>Loading external schemas via ajax (using $ref)</li>
+  <li>Setting the editor's value from javascript (try the Restore to Default button)</li>
+  <li>Validating the editor's contents (try setting name to an empty string)</li>
+  <li>Macro templates (try changing the city or state fields and watch the citystate field update automatically)</li>
+  <li>Enabling and disabling editor fields</li>
+</ul>
+
+<div class="mdc-dialog mdc-dialog--scrollable"
+     role="alertdialog"
+     aria-modal="true"
+     aria-labelledby="my-dialog-title"
+     aria-describedby="my-dialog-content">
+  <div class="mdc-dialog__container">
+    <div class="mdc-dialog__surface">
+      <!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
+      <h2 class="mdc-dialog__title" id="my-dialog-title">
+        Edit settings
+       </h2>
+      <div class="mdc-dialog__content" id="editor-settings"  >
+
+        <button id='submit'>Submit (console.log)</button>
+        <button id='restore'>Restore to Default</button>
+        <button id='enable_disable'>Disable/Enable Form</button>
+        <span id='valid_indicator'></span>
+
+      </div>
+      <footer class="mdc-dialog__actions">
+        <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="closed" id="dialog-cancel">
+          <span class="mdc-button__label">cancel</span>
+        </button>
+        <button type="button" class="mdc-button mdc-dialog__button dialog-editor-save"   id="dialog-confirm">
+          <span class="mdc-button__label">Save</span>
+        </button>
+      </footer>
+    </div>
+  </div>
+  <div class="mdc-dialog__scrim"></div>
+</div>
+
+<button class="mdc-button dialog-editor"> Edit Page </button>
+
+<!-- JSONEditor is not defined -->
+<script src="/webpack/vendor/jsoneditor.js"></script>
+<script>
+  // This is the starting value for the editor
+  // We will use this to seed the initial editor
+  // and to provide a "Restore to Default" button.
+  var starting_value = [
+    {
+      name: "John Smith",
+      age: 35,
+      gender: "male",
+      location: {
+        city: "San Francisco",
+        state: "California",
+        citystate: ""
+      },
+      pets: [
+        {
+          name: "Spot",
+          type: "dog",
+          fixed: true
+        },
+        {
+          name: "Whiskers",
+          type: "cat",
+          fixed: false
+        }
+      ]
+    }
+  ];
+
+  var element = document.getElementById('editor-settings');
+
+  // Initialize the editor
+  var options = {
+    // Enable fetching schemas via ajax
+    ajax: true,
+    theme: 'barebones',
+    template: 'ejs',
+
+    // The schema for the editor
+    schema: {
+      type: "array",
+      title: "People",
+      format: "tabs",
+      items: {
+        title: "Person",
+        headerTemplate: " - ",
+        oneOf: [
+          {
+            $ref: "basic_person.json",
+            title: "Basic Person"
+          },
+          {
+            $ref: "person.json",
+            title: "Complex Person"
+          }
+        ]
+      }
+    },
+    // Seed the form with a starting value
+    startval: starting_value,
+    // Disable additional properties
+    no_additional_properties: true,
+    // Require all properties by default
+    required_by_default: true
+  };
+
+
+  var editor = new JSONEditor(element, options);
+
+  // Hook up the submit button to log to the console
+  document.getElementById('submit').addEventListener('click',function() {
+    // Get the value from the editor
+    console.log(editor.getValue());
+  });
+
+  // Hook up the Restore to Default button
+  document.getElementById('restore').addEventListener('click',function() {
+    editor.setValue(starting_value);
+  });
+
+  // Hook up the enable/disable button
+  document.getElementById('enable_disable').addEventListener('click',function() {
+    // Enable form
+    if(!editor.isEnabled()) {
+      editor.enable();
+    }
+    // Disable form
+    else {
+      editor.disable();
+    }
+  });
+
+  // Hook up the validation indicator to update its
+  // status whenever the editor changes
+  editor.on('change',function() {
+    // Get an array of errors from the validator
+    var errors = editor.validate();
+
+    var indicator = document.getElementById('valid_indicator');
+
+    // Not valid
+    if(errors.length) {
+      indicator.style.color = 'red';
+      indicator.textContent = "not valid";
+    }
+    // Valid
+    else {
+      indicator.style.color = 'green';
+      indicator.textContent = "valid";
+    }
+  });
+</script>
+
+    </div>
+  </section>
+</article>
+
+
+
+<!-- <script src="/webpack/vendor/jsoneditor.js"></script> -->
+
+<!-- <script type="module" src="/webpack/vendor/editor.js" ></script> -->
+
+    <!-- Footer -->
+<footer id="footer">
+  <ul class="icons">
+    
+        
+            
+
+            <li>
+                <a target="_blank" href="https://twitter.com/terachain">
+                  <i class="icon-twitter" ></i>
+              </a>
+            </li>
+            
+
+        
+    
+        
+            
+
+            <li>
+                <a target="_blank" href="https://github.com/terachain">
+                  <i class="icon-github" ></i>
+              </a>
+            </li>
+            
+
+        
+    
+  </ul>
+  <ul class="copyright">
+    <li>&copy; 
+    
+      
+      
+    
+    2019
+    TeraChain</li>
+    <li>
+        <a href="tel:1-800-TERA">
+          <i class="icon-phone" ></i>
+          1-800-TERA
+      </a>
+    </li>
+  </ul>
+</footer>
+
+  </body>
+  <!-- <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js" rel="prefetch"></script> -->
+  <!-- Firebase App is always required and must be first -->
+<!-- <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js" rel="prefetch"></script> -->
+<!-- Add additional services that you want to use -->
+<!-- <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-auth.js" rel="prefetch"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-database.js" rel="prefetch"></script> -->
+  <script type="text/javascript" src="/webpack/website.js" rel="prefetch" ></script>
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> -->
+</html>

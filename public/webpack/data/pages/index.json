@@ -1,0 +1,9 @@
+{
+  "filename": "index.html",
+  "template": "./webpack/index.html",
+   "meta": {
+     "title": "Lawntology",
+     "description": "Lawncare and Landscaping company",
+     "author": "Lawntology"
+   }
+}
