@@ -1,0 +1,2223 @@
+{
+      "type": "object",
+      "id": "step2",
+      "required": [
+        "customConstituents",
+        "customChemicals"
+      ],
+      "properties": {
+        "chemicalSelect": {
+          "type": "string",
+          "title": "Chemical Name or CAS#",
+          "id": "Chemical Select",
+          "class": "chemical-select",
+          "placeholder": "Enter Chemical Name or CAS#"
+        },
+        "ConstituentSelect": {
+          "type": "string",
+          "title": "Constituents Name or CAS#",
+          "id": "Chemical Constituents",
+          "class": "constituent-select",
+          "placeholder": "Enter Constituents Name or CAS#"
+        },
+          "customConstituents": {
+           "type": "array",
+           "format": "table",
+           "title": "Custom Constituents",
+           "class": "custom-constituents",
+           "uniqueItems": true,
+           "items": {
+             "type": "object",
+             "title": "Custom Constituent",
+             "properties": {
+               "constituentName": {
+                 "type": "string",
+                 "title": "Substance",
+                 "id": "substance"
+               },
+               "constituentid": {
+                 "type": "string",
+                 "title": "CAS#",
+                 "id": "CAS",
+                 "minLength": 2
+               },
+               "constituentManufacturer": {
+                 "type": "string",
+                 "title": "Manufacturer",
+                 "id": "constituentManufacturer",
+                 "minLength": 2
+               },
+               "SDSdate": {
+                 "type": "string",
+                 "title": "SDS Date",
+                 "id": "date"
+               },
+               "constituentWeight": {
+                 "type": "string",
+                 "title": "Molecular Weight (g/mol)",
+                 "format": "tel",
+                 "class": "constituentWeight",
+                 "id": "Molecular Weight (g/mol)"
+               },
+               "constituentPhysicalState": {
+                 "type": "string",
+                 "title": "Physical State",
+                 "id": "Physical State",
+                 "enum": [ "gas", "liquid", "mist", "vapor", "dust", "fiber", "fume", "metal", "paste", "gel", "grease", "lube" ],
+                 "default": "gas"
+               },
+               "constituentColor": {
+                 "type": "string",
+                 "title": "constituent Color",
+                 "id": "constituent Color",
+                 "enum": ["black","red","green","blue","yellow","orange","purple","brown","white","cyan","maagenta"],
+                 "default": "white"
+               },
+               "constituentSmell": {
+                 "type": "string",
+                 "title": "constituent Smell",
+                 "id": "constituent Smell",
+                 "enum": ["black","red","green","blue","yellow","orange","purple","brown","white","cyan","maagenta"],
+                 "default": "white"
+               },
+               "constituentFlashPoint": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "Flash Point (°F)",
+                 "id": "Flash Point"
+               },
+               "constituentBoilingPoint": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "Boiling Point (°F)",
+                 "id": "Boiling Point"
+               },
+               "constituentSolubility": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "Solubility %",
+                 "id": "Solubility %",
+                 "class": "solubility"
+               },
+               "constituentVaporPressure": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "Vapor Pressure (mm/Hg)",
+                 "id": "Vapor Pressure (mm/Hg)",
+                 "class": "constituentVaporPressure"
+               },
+               "constituentEvaporationRate": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "Evaporation Rate (hrs)",
+                 "id": "Evaporation Rate (hrs)",
+                 "class": "constituentEvaporationRate"
+               },
+               "constituentUpperFlammabilityLimit": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "Upper Flammability Limit (%)",
+                 "id": "Upper Flammability Limit (%)",
+                 "class": "constituentUpperFlammabilityLimit"
+               },
+               "constituentLowerFlammabilityLimit": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "Lower Flammability Limit (%)",
+                 "id": "Lower Flammability Limit (%)",
+                 "class": "constituentLowerFlammabilityLimit"
+               },
+               "constituentPH": {
+                 "type": "string",
+                 "class": "PH",
+                 "format": "number",
+                 "title": "PH",
+                 "id": "PH"
+               },
+               "constituentVaporDensity": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "Vapor Density",
+                 "id": "Vapor Density",
+                 "class": "constituentVaporDensity"
+               },
+               "constituentSpecificGravity": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "Specific Gravity",
+                 "id": "Specific Gravity",
+                 "class": "constituentSpecificGravity"
+               },
+               "constituentLC50": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "LC50 (ppm)",
+                 "id": "LC50 (ppm)",
+                 "class": "constituentLC50"
+               },
+               "constituentLD50Oral": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "LD50-Oral (mg/kg)",
+                 "id": "LD50-Oral (mg/kg)",
+                 "class": "constituentLD50Oral"
+               },
+               "constituentLD50Skin": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "LD50-Skin (mg/kg)",
+                 "id": "LD50-Skin (mg/kg)",
+                 "class": "constituentLD50Skin"
+               },
+               "constituentParticleSize": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "Particle Size (µm)",
+                 "id": "Particle Size (µm)",
+                 "class": "constituentParticleSize"
+               },
+               "AirborneExposurePotential": {
+                  "type": "object",
+                  "title": "Airborne Exposure Potential ",
+                  "uniqueItems": true,
+                  "class": "airborne-exposure-potential ",
+                  "properties": {
+                      "BoilingPoint": {
+                        "type": "object",
+                        "class": "airborne-option hide-title",
+                        "properties": {
+                          "Original": {
+                              "type": "string",
+                              "title": "Boiling Point (°F)",
+                              "id": "Boiling Point (°F)",
+                              "class": "risk-compare",
+                              "enum": [
+                                "< 50 ^5",
+                                "50 ≤ 150 ^4",
+                                "150 ≤ 250 ^3",
+                                "250 ≤ 350 ^2",
+                                "> 350 ^1"
+                              ],
+                              "options": {
+                                "enum_titles": [
+                                  "< 50 ",
+                                  "50 ≤ 150",
+                                  "150 ≤ 250",
+                                  "250 ≤ 350",
+                                  "> 350 "
+                                ]
+                              }
+                          },
+                          "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                          "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                        }
+                      },
+                      "FlashPoint": {
+                        "type": "object",
+                        "class": "airborne-option hide-title",
+                        "properties": {
+                          "Original": {
+                              "type": "string",
+                              "title": "Flash Point (°F)",
+                              "id": "Flash Point (°F)",
+                              "class": "risk-compare",
+                              "enum": [
+                                  "< 50 ^5",
+                                  "50 ≤ 100 ^4",
+                                  "100 ≤ 150 ^3",
+                                  "150 ≤ 200 ^2",
+                                  "> 200 ^1"
+                              ],
+                              "options": {
+                                "enum_titles": [
+                                  "< 50",
+                                  "50 ≤ 100",
+                                  "100 ≤ 150",
+                                  "150 ≤ 200",
+                                  "> 200 "
+                                ]
+                              }
+                          },
+                          "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                          "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                        }
+                      },
+                      "VaporPressure": {
+                        "type": "object",
+                        "class": "airborne-option hide-title",
+                        "properties": {
+                          "Original": {
+                              "type": "string",
+                              "title": "Vapor Pressure (mmHg)",
+                              "id": "Vapor Pressure (mmHg)",
+                              "class": "risk-compare",
+                              "enum": [
+                                  "> 100 ^5",
+                                  "28 ≤ 100 ^4",
+                                  "10 ≤ 28 ^3",
+                                  "1 ≤ 10 ^2",
+                                  "< 1 ^1"
+                              ],
+                              "options": {
+                                "enum_titles": [
+                                  "> 100",
+                                  "28 ≤ 100",
+                                  "10 ≤ 28",
+                                  "1 ≤ 10",
+                                  "< 1"
+                                ]
+                              }
+                          },
+                          "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                          "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                        }
+                      },
+                      "EvaporationRate": {
+                        "type": "object",
+                        "class": "airborne-option hide-title",
+                        "properties": {
+                          "Original": {
+                              "type": "string",
+                              "title": "Evaporation Rate (hrs)",
+                              "id": "Evaporation Rate (hrs)",
+                              "class": "risk-compare",
+                              "enum": [
+                                    "0 to 3 ^5",
+                                    "3 to 12 ^4",
+                                    "12 to 30 ^3",
+                                    "30 to 50 ^2",
+                                    ">50 ^1"
+                              ],
+                              "options": {
+                                "enum_titles": [
+                                  "0 to 3 ",
+                                  "3 to 12",
+                                  "12 to 30 ",
+                                  "30 to 50 ",
+                                  ">50 "
+                                ]
+                              }
+                          },
+                          "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                          "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                        }
+                      },
+                      "ParticleSize": {
+                        "type": "object",
+                        "class": "airborne-option hide-title",
+                        "properties": {
+                          "Original": {
+                              "type": "string",
+                              "title": "Particle Size",
+                              "id": "Particle Size",
+                              "class": "risk-compare",
+                              "enum": [
+                                  "Ultra-Fine (< 0.1 µm, Invisible, Friable) ^5",
+                                  "Respirable Fine (0.1 ≤ 2.5 µm, Powder) ^4",
+                                  "Inhalable Fine (2.5 ≤ 10 µm, Crystalline, granular solid) ^3",
+                                  "Coarse Dust (10 µm ≤ 100 µm) ^2",
+                                  "Super Coarse (>100 µm, Non-friable solids, Pellets) ^1"
+                              ],
+                              "options": {
+                                "enum_titles": [
+                                  "Ultra-Fine (< 0.1 µm, Invisible, Friable) ",
+                                  "Respirable Fine (0.1 ≤ 2.5 µm, Powder)",
+                                  "Inhalable Fine (2.5 ≤ 10 µm, Crystalline, granular solid)",
+                                  "Coarse Dust (10 µm ≤ 100 µm)",
+                                  "Super Coarse (>100 µm, Non-friable solids, Pellets)"
+                                ]
+                              }
+                          },
+                          "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                          "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                        }
+                      }
+                  }
+                },
+                "DermalContactPotential": {
+                   "type": "object",
+                   "title": "Dermal Contact Potential",
+                   "uniqueItems": true,
+                   "class": "dermal-contact-potential",
+                   "properties": {
+                       "MolecularWeight": {
+                         "type": "object",
+                         "class": "dermal-contact-option hide-title",
+                         "properties": {
+                           "Original": {
+                               "type": "string",
+                               "title": "Molecular Weight (g/mol)",
+                               "id": "Molecular Weight (g/mol)",
+                               "class": "risk-compare",
+                               "enum": [
+                                    "> 200 ^5",
+                                    "150 ≤ 200 ^4",
+                                    "100 ≤ 150 ^3",
+                                    "50 ≤ 100 ^2",
+                                    "< 50 ^1"
+                               ],
+                               "options": {
+                                 "enum_titles": [
+                                   "> 200",
+                                   "150 ≤ 200",
+                                   "100 ≤ 150",
+                                   "50 ≤ 100",
+                                   "< 50"
+                                 ]
+                               }
+                           },
+                           "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                           "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                         }
+                       },
+                       "VaporPressure": {
+                         "type": "object",
+                         "class": "dermal-contact-option hide-title",
+                         "properties": {
+                           "Original": {
+                               "type": "string",
+                               "title": "Vapor Pressure (mmHg)",
+                               "id": "Vapor Pressure (mmHg)",
+                               "class": "risk-compare",
+                               "enum": [
+                                   "> 100 ^5",
+                                   "28 ≤ 100 ^4",
+                                   "10 ≤ 28 ^3",
+                                   "1 ≤ 10 ^2",
+                                   "< 1 ^1"
+                               ],
+                               "options": {
+                                 "enum_titles": [
+                                   "> 100",
+                                   "28 ≤ 100",
+                                   "10 ≤ 28",
+                                   "1 ≤ 10",
+                                   "< 1"
+                                 ]
+                               }
+                           },
+                           "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                           "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                         }
+                       },
+                       "EvaporationRate": {
+                         "type": "object",
+                         "class": "dermal-contact-option hide-title",
+                         "properties": {
+                           "Original": {
+                               "type": "string",
+                               "title": "Evaporation Rate (hrs)",
+                               "id": "Evaporation Rate (hrs)",
+                               "class": "risk-compare",
+                               "enum": [
+                                     "0 to 3 ^5",
+                                     "3 to 12 ^4",
+                                     "12 to 30 ^3",
+                                     "30 to 50 ^2",
+                                     ">50 ^1"
+                               ],
+                               "options": {
+                                 "enum_titles": [
+                                   "0 to 3 ",
+                                   "3 to 12",
+                                   "12 to 30 ",
+                                   "30 to 50 ",
+                                   ">50 "
+                                 ]
+                               }
+                           },
+                           "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                           "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                         }
+                       },
+                       "SizeSolubility": {
+                         "type": "object",
+                         "class": "dermal-contact-option add-multiple hide-title",
+                         "properties": {
+                           "Original": {
+                               "type": "string",
+                               "title": "Size and Solubility ",
+                               "id": "Size and Solubility ",
+                               "class": "risk-compare add-multiple",
+                               "enum": [
+                                 "none",
+                                 "Soluble (Good lipid/water solubility)  ^5",
+                                 "Very Small Particles (<1 micron in size) Semi-Soluble (Some lipid/water solubility) ^4" ,
+                                 "Small Particles (>1 micron in size) Semi-Soluble (Some lipid/water solubility) ^3",
+                                 "Large Particles (>10 micron in size) Semi-Soluble (Some lipid/water solubility) ^2",
+                                 "Large Insoluble Particles (Poor lipid/water solubility) ^1"
+                               ],
+                               "options": {
+                                 "enum_titles": [
+                                   "none",
+                                   "Soluble (Good lipid/water solubility)",
+                                   "Very Small Particles (<1 micron in size) Semi-Soluble (Some lipid/water solubility)" ,
+                                   "Small Particles (>1 micron in size) Semi-Soluble (Some lipid/water solubility)",
+                                   "Large Particles (>10 micron in size) Semi-Soluble (Some lipid/water solubility)",
+                                   "Large Insoluble Particles (Poor lipid/water solubility)"
+                                 ]
+                               }
+                           },
+                           "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                           "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                         }
+                      }
+                   }
+                 },
+                 "HealthHazards": {
+                    "type": "object",
+                    "title": "Health Hazards",
+                    "uniqueItems": true,
+                    "class": "health-hazards",
+                    "properties": {
+                        "Route": {
+                          "type": "string",
+                          "title": "Route",
+                          "id": "Route",
+                          "class": "hazards-option add-multiple hide",
+                          "enum": [
+                              "none",
+                              "CMR",
+                              "INH",
+                              "DER",
+                              "ING",
+                              "TOST"
+                          ],
+                          "default": " "
+                        },
+                        "GHSCategories": {
+                          "type": "object",
+                          "class": "hazards-option  hide-title",
+                          "properties": {
+                            "Original": {
+                                "type": "string",
+                                "title": "GHS Categories",
+                                "id": "GHS Categories",
+                                "class": "risk-compare add-multiple",
+                                "enum": [
+                                     "none",
+                                     "Carcinogenicity – Cat. 1A – Known ^5",
+                                     "Germ Cell Mutagenicity – Cat. 1A - Known ^5",
+                                     "Reproductive Toxicity -Cat. 1A - Known ^5",
+                                     "Aspiration Toxicity Cat. 1 - Known ^5",
+                                     "Acute Toxicity Cat. 1 – Severe ^5",
+                                     "Gases: ≤ 100 ppm ^5",
+                                     "Vapors: ≤ 0.5 mg/L ^5",
+                                     "Dusts & Mists: ≤ 0.05 mg/L ^5",
+                                     "Skin Cat. 1A – Corrosion ^5",
+                                     "Exp < 3 min ^5",
+                                     "Acute Toxicity Cat. 1 – Severe ^5",
+                                     "Dermal: ≤ 50 mg/kg ^5",
+                                     "Acute Toxicity Cat. 1 – Severe ^5",
+                                     "Oral: ≤ 5 mg/kg ^5",
+                                     "TOST Single Exposure Cat. 1 – Significant ^5",
+                                     "Carcinogenicity – Cat. 1B – Presumed ^4",
+                                     "Germ Cell Mutagenicity – Cat. 1B -Presumed ^4",
+                                     "Reproductive Toxicity -Cat. 1B - Presumed ^4",
+                                     "Aspiration Toxicity Cat. 2 – Presumed ^4",
+                                     "Sensitization - Respiratory ^4",
+                                     "Acute Toxicity Cat. 2 – High ^4",
+                                     "Gases: >100 ≤ 500 ppm ^4",
+                                     "Vapors: > 0.5 ≤ 2.0 mg/L ^4",
+                                     "Dusts & Mists: > 0.05 ≤ 0.5 mg/L ^4",
+                                     "Skin Cat. 1B – Corrosion ^4",
+                                     "Exp < 1 hr ^4",
+                                     "Eye Effects Cat. 1 – Serious ^4",
+                                     "Dermal: > 50 ≤ 200 mg/kg ^4",
+                                     "Acute Toxicity Cat. 2 – High ^4",
+                                     "Acute Toxicity Cat. 2 – High ^4",
+                                     "Oral: > 5 ≤ 50 mg/kg ^4",
+                                     "TOST Single Exposure Cat. 2 – Presumed ^4",
+                                     "TOST Repeated Exposure Cat. 1 – Significant ^4",
+                                     "Carcinogenicity Cat. 2 – Suspected ^3",
+                                     "Germ Cell Mutagenicity Cat. 2 - Suspected ^3",
+                                     "Reproductive Toxicity Cat. 2 – Suspected ^3",
+                                     "Reproductive Toxicity – On or Via Lactation ^3",
+                                     "Acute Toxicity Cat. 3 – ^3",
+                                     "Moderate ^3",
+                                     "Gases: > 500 ≤ 2500 ppm ^3",
+                                     "Vapors: > 2 ≤ 10 mg/L ^3",
+                                     "Dusts & Mists: > 0.5 ≤ 1.0 mg/L ^3 ",
+                                     "Skin Cat. 1C – Corrosion Exp < 4 hrs ^3",
+                                     "Eye Effects Cat. 2A – Irritant ^3",
+                                     "Sensitization - Skin ^3",
+                                     "Acute Toxicity Cat. 3 – ^3" ,
+                                     "Moderate ^3",
+                                     "Dermal: > 200 ≤ 1000 mg/kg ^3",
+                                     "Acute Toxicity Cat. 3 – ^3",
+                                     "Moderate ^3",
+                                     "Oral: > 50 ≤ 300 mg/kg ^3",
+                                     "TOST Single Exposure Cat. 3 – ^3",
+                                     "Transient Effects ^3",
+                                     "TOST Repeated Exposure Cat. 2 – Presumed ^3",
+                                     "Acute Toxicity Cat. 4 – Mild ^2",
+                                     "Gases: > 2500 ≤ 5000 ppm ^2",
+                                     "Vapors: > 10 ≤ 20 mg/L ^2",
+                                     "Dusts & Mists: > 1 ≤ 5 mg/L ^2" ,
+                                     "Skin Cat. 2 – Irritation ^2",
+                                     "Eye Effects Cat. 2B – Mild Irritant ^2",
+                                     "Acute Toxicity Cat. 4 – Mild ^2",
+                                     "Dermal: > 1000 ≤ 2000 mg/kg ^2",
+                                     "Acute Toxicity Cat. 4 – Mild ^2",
+                                     "Oral: > 300 ≤ 2000 mg/kg ^2",
+                                     "Acute Toxicity Cat. 5 – Low ^1",
+                                     "Gases: > 5000 ppm ^1",
+                                     "Vapors: > 20 mg/L ^1",
+                                     "Dusts & Mists: > 5 mg/L ^1",
+                                     "Skin Cat. 3 – Mild Irritation ^1",
+                                     "Acute Toxicity Cat. 5 – Low ^1",
+                                     "Dermal: > 2000 mg/kg ^1",
+                                     "Acute Toxicity Cat. 5 – Low ^1",
+                                     "Oral: > 2000 mg/kg ^1"
+                                ],
+                                "options": {
+                                  "enum_titles": [
+                                    "none",
+                                    "Carcinogenicity – Cat. 1A – Known",
+                                    "Germ Cell Mutagenicity – Cat. 1A - Known",
+                                    "Reproductive Toxicity -Cat. 1A - Known",
+                                    "Aspiration Toxicity Cat. 1 - Known",
+                                    "Acute Toxicity Cat. 1 – Severe",
+                                    "Gases: ≤ 100 ppm",
+                                    "Vapors: ≤ 0.5 mg/L",
+                                    "Dusts & Mists: ≤ 0.05 mg/L",
+                                    "Skin Cat. 1A – Corrosion ",
+                                    "Exp < 3 min",
+                                    "Acute Toxicity Cat. 1 – Severe",
+                                    "Dermal: ≤ 50 mg/kg",
+                                    "Acute Toxicity Cat. 1 – Severe",
+                                    "Oral: ≤ 5 mg/kg",
+                                    "TOST Single Exposure Cat. 1 – Significant",
+                                    "Carcinogenicity – Cat. 1B – Presumed",
+                                    "Germ Cell Mutagenicity – Cat. 1B -Presumed",
+                                    "Reproductive Toxicity -Cat. 1B - Presumed",
+                                    "Aspiration Toxicity Cat. 2 – Presumed",
+                                    "Sensitization - Respiratory",
+                                    "Acute Toxicity Cat. 2 – High",
+                                    "Gases: >100 ≤ 500 ppm",
+                                    "Vapors: > 0.5 ≤ 2.0 mg/L",
+                                    "Dusts & Mists: > 0.05 ≤ 0.5 mg/L",
+                                    "Skin Cat. 1B – Corrosion",
+                                    "Exp < 1 hr",
+                                    "Eye Effects Cat. 1 – Serious",
+                                    "Dermal: > 50 ≤ 200 mg/kg",
+                                    "Acute Toxicity Cat. 2 – High",
+                                    "Acute Toxicity Cat. 2 – High",
+                                    "Oral: > 5 ≤ 50 mg/kg",
+                                    "TOST Single Exposure Cat. 2 – Presumed",
+                                    "TOST Repeated Exposure Cat. 1 – Significant",
+                                    "Carcinogenicity Cat. 2 – Suspected",
+                                    "Germ Cell Mutagenicity Cat. 2 - Suspected",
+                                    "Reproductive Toxicity Cat. 2 – Suspected",
+                                    "Reproductive Toxicity – On or Via Lactation",
+                                    "Acute Toxicity Cat. 3 –",
+                                    "Moderate",
+                                    "Gases: > 500 ≤ 2500 ppm",
+                                    "Vapors: > 2 ≤ 10 mg/L",
+                                    "Dusts & Mists: > 0.5 ≤ 1.0 mg/L",
+                                    "Skin Cat. 1C – Corrosion Exp < 4 hrs",
+                                    "Eye Effects Cat. 2A – Irritant",
+                                    "Sensitization - Skin",
+                                    "Acute Toxicity Cat. 3 –" ,
+                                    "Moderate",
+                                    "Dermal: > 200 ≤ 1000 mg/kg",
+                                    "Acute Toxicity Cat. 3 –",
+                                    "Moderate",
+                                    "Oral: > 50 ≤ 300 mg/kg",
+                                    "TOST Single Exposure Cat. 3 –",
+                                    "Transient Effects",
+                                    "TOST Repeated Exposure Cat. 2 – Presumed",
+                                    "Acute Toxicity Cat. 4 – Mild",
+                                    "Gases: > 2500 ≤ 5000 ppm",
+                                    "Vapors: > 10 ≤ 20 mg/L",
+                                    "Dusts & Mists: > 1 ≤ 5 mg/L" ,
+                                    "Skin Cat. 2 – Irritation",
+                                    "Eye Effects Cat. 2B – Mild Irritant",
+                                    "Acute Toxicity Cat. 4 – Mild",
+                                    "Dermal: > 1000 ≤ 2000 mg/kg",
+                                    "Acute Toxicity Cat. 4 – Mild",
+                                    "Oral: > 300 ≤ 2000 mg/kg",
+                                    "Acute Toxicity Cat. 5 – Low",
+                                    "Gases: > 5000 ppm",
+                                    "Vapors: > 20 mg/L",
+                                    "Dusts & Mists: > 5 mg/L",
+                                    "Skin Cat. 3 – Mild Irritation",
+                                    "Acute Toxicity Cat. 5 – Low",
+                                    "Dermal: > 2000 mg/kg",
+                                    "Acute Toxicity Cat. 5 – Low",
+                                    "Oral: > 2000 mg/kg"
+                                  ]
+                                }
+                            },
+                            "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                            "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                          }
+                        },
+                        "HazardStatements": {
+                          "type": "object",
+                          "class": "hazards-option hide-title",
+                          "properties": {
+                            "Original": {
+                                "type": "string",
+                                "title": "Hazard Statements",
+                                "id": "Hazard Statements",
+                                "class": "risk-compare add-multiple",
+                                "enum": [
+                                  "none",
+                                  "H340 – May cause genetic defects ^5",
+                                  "H350 – May cause cancer ^5",
+                                  "H360 – May damage fertility or the unborn child ^5",
+                                  "H330 – Fatal if inhaled ^5",
+                                  "H310 – Fatal in contact with skin ^5",
+                                  "H300 – Fatal if swallowed ^5",
+                                  "H370 – Causes damage to organs ^5",
+                                  "H341 – Suspected of causing genetic defects ^4",
+                                  "H351 – Suspected of causing cancer ^4",
+                                  "H361 – Suspected of damaging fertility or the unborn child ^4",
+                                  "H361d – Suspected of damaging the unborn child ^4",
+                                  "H331 – Toxic if inhaled ^4",
+                                  "H334 – May cause allergy or asthma symptoms or breathing difficulties if inhaled ^4",
+                                  "H311 – Toxic in contact with skin ^4",
+                                  "H314 – Causes severe skin burns and eye damage ^4",
+                                  "H318 – Causes serious eye damage ^4",
+                                  "H301 – Toxic if swallowed ^4",
+                                  "H304 – May be fatal if swallowed and enters airways. ^4",
+                                  "H371 – May cause damage to organs ^4",
+                                  "H372 – Causes damage to organs through prolonged or repeated exposure ^4",
+                                  "H362 – May cause harm to breast-fed children ^3",
+                                  "H332 – Harmful if inhaled ^3",
+                                  "H335 – May cause respiratory irritation ^3",
+                                  "H312 – Harmful in contact with skin ^3",
+                                  "H317 – May cause an allergic skin reaction ^3",
+                                  "H319 – Causes serious eye irritation ^3",
+                                  "H302 – Harmful if swallowed ^3",
+                                  "H373 – May cause damage to organs through prolonged or repeated exposure ^3",
+                                  "H336 – May cause drowsiness or dizziness ^3",
+                                  "H333 – May be harmful if inhaled ^2" ,
+                                  "H313 – May be harmful in contact with skin ^2",
+                                  "H315 – Causes skin irritation ^2",
+                                  "H320 – Causes eye irritation ^2" ,
+                                  "H303 – May be harmful if swallowed ^2",
+                                  "H305 – May be harmful if swallowed and enters airway ^2",
+                                  "H316 – Causes mild skin irritation ^1"
+                                ],
+                                "options": {
+                                  "enum_titles": [
+                                    "none",
+                                    "H340 – May cause genetic defects",
+                                    "H350 – May cause cancer",
+                                    "H360 – May damage fertility or the unborn child",
+                                    "H330 – Fatal if inhaled",
+                                    "H310 – Fatal in contact with skin",
+                                    "H300 – Fatal if swallowed",
+                                    "H370 – Causes damage to organs",
+                                    "H341 – Suspected of causing genetic defects",
+                                    "H351 – Suspected of causing cancer",
+                                    "H361 – Suspected of damaging fertility or the unborn child",
+                                    "H361d – Suspected of damaging the unborn child",
+                                    "H331 – Toxic if inhaled",
+                                    "H334 – May cause allergy or asthma symptoms or breathing difficulties if inhaled",
+                                    "H311 – Toxic in contact with skin",
+                                    "H314 – Causes severe skin burns and eye damage",
+                                    "H318 – Causes serious eye damage",
+                                    "H301 – Toxic if swallowed",
+                                    "H304 – May be fatal if swallowed and enters airways.",
+                                    "H371 – May cause damage to organs",
+                                    "H372 – Causes damage to organs through prolonged or repeated exposure",
+                                    "H362 – May cause harm to breast-fed children",
+                                    "H332 – Harmful if inhaled",
+                                    "H335 – May cause respiratory irritation",
+                                    "H312 – Harmful in contact with skin",
+                                    "H317 – May cause an allergic skin reaction",
+                                    "H319 – Causes serious eye irritation",
+                                    "H302 – Harmful if swallowed",
+                                    "H373 – May cause damage to organs through prolonged or repeated exposure",
+                                    "H336 – May cause drowsiness or dizziness",
+                                    "H333 – May be harmful if inhaled" ,
+                                    "H313 – May be harmful in contact with skin",
+                                    "H315 – Causes skin irritation",
+                                    "H320 – Causes eye irritation" ,
+                                    "H303 – May be harmful if swallowed",
+                                    "H305 – May be harmful if swallowed and enters airway",
+                                    "H316 – Causes mild skin irritation"
+                                  ]
+                                }
+                            },
+                            "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                            "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                          }
+                        },
+                        "RiskStatements": {
+                          "type": "object",
+                          "class": "hazards-option hide-title",
+                          "properties": {
+                            "Original": {
+                                "type": "string",
+                                "title": "Risk Statements",
+                                "id": "Risk Statements",
+                                "class": "risk-compare add-multiple",
+                                "enum": [
+                                  "none",
+                                  "R45(1) – Cancer – Known ^5",
+                                  "R46(1) – Mutagen – Known ^5",
+                                  "R49(1) – Cancer by inhalation – Known ^5",
+                                  "R60(1) – Impairs Fertility – Known ^5",
+                                  "R61(1) – Harm to unborn child – Known ^5",
+                                   "R26 – Very toxic by inhalation ^5",
+                                   "R27 – Very toxic in contact with skin ^5",
+                                   "R28 – Very toxic if swallowed ^5",
+                                   "R45(2) – Cancer – Presumed ^4",
+                                   "R46(2) – Mutagen – Presumed ^4",
+                                   "R49(2) – Cancer by inhalation – Presumed ^4",
+                                   "R60(2) – Impairs Fertility – Presumed ^4",
+                                   "R61(2) – Harm to unborn child – Presumed ^4",
+                                   "R23 – Toxic by inhalation ^4",
+                                   "R42 – May cause sensitization by inhalation ^4",
+                                   "R24 – Toxic in contact with skin ^4",
+                                   "R35 – Causes severe burns ^4",
+                                   "R41 – Risk of serious damage to eyes ^4",
+                                   "R25 – Toxic if swallowed ^4",
+                                   "R39 – Danger of very serious irreversible effects ^4",
+                                   "R62 – Possible risk of impaired fertility ^3",
+                                   "R63 – Possible risk of harm to the unborn child ^3",
+                                   "R64 – May cause harm to breast fed babies ^3",
+                                   "R20 – Harmful by Inhalation ^3",
+                                   "R37 – Irritating to the respiratory system ^3",
+                                   "R21 – Harmful with contact with skin ^3",
+                                   "R34 – Causes burns ^3",
+                                   "R36 – Irritating to the eyes ^3",
+                                   "R43 – May cause sensitization by skin contact ^3",
+                                   "R22 – Harmful if swallowed ^3",
+                                   "R40(3)– Possible risk of irreversible effects ^3",
+                                   "R48 – Danger of serious damage to health by prolonged exposure ^3",
+                                   "R67 – Vapors may cause drowsiness and dizziness ^3",
+                                   "R38 – Irritating to the skin ^2",
+                                   "R66 – Repeated exposure may cause skin dryness or cracking ^2"
+                                ],
+                                "options": {
+                                  "enum_titles": [
+                                    "none",
+                                    "R45(1) – Cancer – Known",
+                                    "R46(1) – Mutagen – Known",
+                                    "R49(1) – Cancer by inhalation – Known",
+                                    "R60(1) – Impairs Fertility – Known",
+                                    "R61(1) – Harm to unborn child – Known",
+                                     "R26 – Very toxic by inhalation",
+                                     "R27 – Very toxic in contact with skin",
+                                     "R28 – Very toxic if swallowed",
+                                     "R45(2) – Cancer – Presumed",
+                                     "R46(2) – Mutagen – Presumed",
+                                     "R49(2) – Cancer by inhalation – Presumed",
+                                     "R60(2) – Impairs Fertility – Presumed",
+                                     "R61(2) – Harm to unborn child – Presumed",
+                                     "R23 – Toxic by inhalation",
+                                     "R42 – May cause sensitization by inhalation",
+                                     "R24 – Toxic in contact with skin",
+                                     "R35 – Causes severe burns",
+                                     "R41 – Risk of serious damage to eyes",
+                                     "R25 – Toxic if swallowed",
+                                     "R39 – Danger of very serious irreversible effects",
+                                     "R62 – Possible risk of impaired fertility",
+                                     "R63 – Possible risk of harm to the unborn child",
+                                     "R64 – May cause harm to breast fed babies",
+                                     "R20 – Harmful by Inhalation",
+                                     "R37 – Irritating to the respiratory system",
+                                     "R21 – Harmful with contact with skin",
+                                     "R34 – Causes burns",
+                                     "R36 – Irritating to the eyes",
+                                     "R43 – May cause sensitization by skin contact",
+                                     "R22 – Harmful if swallowed",
+                                     "R40(3)– Possible risk of irreversible effects",
+                                     "R48 – Danger of serious damage to health by prolonged exposure",
+                                     "R67 – Vapors may cause drowsiness and dizziness",
+                                     "R38 – Irritating to the skin",
+                                     "R66 – Repeated exposure may cause skin dryness or cracking"
+                                  ]
+                                }
+                            },
+                            "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                            "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                          }
+                      }
+                    }
+                  },
+                  "TargetOrganEffects": {
+                     "type": "object",
+                     "title": "Target Organ Effects (Select All That Apply)",
+                     "uniqueItems": true,
+                     "class": "target-organ-effects",
+                     "properties": {
+                         "Cardiovascular": {
+                           "type": "string",
+                           "title": "Cardiovascular (Heart and Blood Vessels)",
+                           "id": "Cardiovascular (Heart and Blood Vessels)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Cardiovascular (Heart and Blood Vessels)",
+                                "Argyria",
+                                "Cardiac Impairment",
+                                "Cardiac Sensitization",
+                                "Myocardial Effects",
+                                "Vasoconstriction",
+                                "Vasodilation",
+                                "Vascular System Impairment"
+                           ],
+                           "default": " "
+                         },
+                         "Cutaneous": {
+                           "type": "string",
+                           "title": "Cutaneous (Skin)",
+                           "id": "Cutaneous (Skin)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Cutaneous (Skin)",
+                                "Beryllium Sensitization",
+                                "Chloracne",
+                                "Dermatitis",
+                                "Skin Irritation",
+                                "Skin Damage",
+                                "Skin Cancer",
+                               "Skin Sensitizer"
+                           ],
+                           "default": " "
+                         },
+                         "Endocrine": {
+                           "type": "string",
+                           "title": "Endocrine (Thyroid and Hormones)",
+                           "id": "Endocrine (Thyroid and Hormones)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Endocrine (Thyroid and Hormones)",
+                                "Adrenal Gland",
+                                "Basal Metabolism" ,
+                                "Body Weight Effect",
+                                "Hypothyroidism",
+                                "Thyroid Effects"
+                           ],
+                           "default": " "
+                         },
+                         "Gastrointestinal": {
+                           "type": "string",
+                           "title": "Gastrointestinal (Mouth, Stomach, GI Tract)",
+                           "id": "Gastrointestinal (Mouth, Stomach, GI Tract)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Gastrointestinal (Mouth, Stomach, GI Tract)",
+                                "Bladder Cancer",
+                                "Bladder Irritation" ,
+                                "GI Damage",
+                                "GI Irritation",
+                                "Larynx Metaplasia",
+                                "Spleen Damage"
+                           ],
+                           "default": " "
+                         },
+                         "Hematopoietic": {
+                           "type": "string",
+                           "title": "Hematopoietic (Blood)",
+                           "id": "Hematopoietic (Blood)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Hematopoietic (Blood)",
+                                "Anemia",
+                                "Aplastic Anemia " ,
+                                "Carboxyhemoglobin (CoHb-emia)",
+                                "Coagulation",
+                                "Cyanosis",
+                                "Hematologic Effect",
+                                "Hemolysis",
+                                "Hemolytic Anemia",
+                                "Hypoxia",
+                                "Immune Effect",
+                                "Leukemia",
+                                "Methemoglobinemia (MeHb-emia)",
+                                "Nitrosyl Hemoglobin (NoHb-emia) ",
+                                "Porphyrin Effect"
+                           ],
+                           "default": " "
+                         },
+                         "Hepatotoxins": {
+                           "type": "string",
+                           "title": "Hepatotoxins (Liver)",
+                           "id": "Hepatotoxins (Liver)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Hepatotoxins (Liver)",
+                                "Hemosiderosis",
+                                "Liver Cancer",
+                                "Liver Damage",
+                                "Liver Effect",
+                                "Liver Impairment"
+                           ],
+                           "default": " "
+                         },
+                         "Musculoskeletal": {
+                           "type": "string",
+                           "title": "Musculoskeletal (Muscles and Skeleton)",
+                           "id": "Musculoskeletal (Muscles and Skeleton)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Musculoskeletal (Muscles and Skeleton)",
+                                "Bone Cancer",
+                                "Bone Damage",
+                                "Dental erosion",
+                                "Fluorosis",
+                                "Muscular Stimulant"
+                           ],
+                           "default": " "
+                         },
+                         "Nephrotoxins": {
+                           "type": "string",
+                           "title": "Nephrotoxins (Kidneys)",
+                           "id": "Nephrotoxins (Kidneys)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Nephrotoxins (Kidneys)",
+                                "Hemosiderosis",
+                                "Kidney Cancer",
+                                "Kidney Damage (Nephropathy)",
+                                "Kidney Impairment",
+                                "Kidney Tubular Damage",
+                                "Renal Toxicity"
+                           ],
+                           "default": " "
+                         },
+                         "Neurotoxins": {
+                           "type": "string",
+                           "title": "Neurotoxins (Nervous System)",
+                           "id": "Neurotoxins (Nervous System)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Neurotoxins (Nervous System)",
+                                "ANS Impairment",
+                                "Cholinesterase Inhibition",
+                                "CNS Convulsion",
+                                "CNS Impairment",
+                                "Cognitive Decrement",
+                                "Neurotoxicity",
+                                "PNS Impairment"
+                           ],
+                           "default": " "
+                         },
+                         "Ocular": {
+                           "type": "string",
+                           "title": " Ocular (Eye)",
+                           "id": "Ocular (Eye)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Ocular (Eye)",
+                                "Cataract" ,
+                                "Eye Damage",
+                                "Eye Irritation",
+                                "Eye Photosensation",
+                                "Visual Impairment"
+                           ],
+                           "default": " "
+                         },
+                         "Reproductive": {
+                           "type": "string",
+                           "title": "Reproductive",
+                           "id": "Reproductive",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Reproductive",
+                                "Embryo Damage",
+                                "Embryo/Fetal Damage ",
+                                "Female Reproductive Damage",
+                                "Male Reproductive Damage",
+                                "Mutagenic Effect",
+                                "Neonatal Toxicity",
+                                "Pregnancy Loss",
+                                "Teratogenic Effect",
+                                "Testicular Damage"
+                           ],
+                           "default": " "
+                         },
+                         "Pulmonary": {
+                           "type": "string",
+                           "title": "Pulmonary (Respiratory)",
+                           "id": "Pulmonary (Respiratory)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Pulmonary (Respiratory)",
+                                "Asbestosis" ,
+                                "Anosmia",
+                                "Asthma",
+                                "Berylliosis",
+                                "Bronchiolitis Obliterans-like Illness",
+                                "Bronchitis",
+                                "Byssinosis" ,
+                                "Hemosiderosis" ,
+                                "Lower RT Irritation",
+                                "Lung Damage",
+                                "Lung Cancer",
+                                "Mesothelioma",
+                                "Metal fume fever",
+                                "Nasal Cancer",
+                                "Pneumoconiosis",
+                                "Pneumonitis",
+                                "Pulmonary Edema",
+                                "Pulmonary Emphysema",
+                                "Pulmonary Fibrosis",
+                                "Respiratory Sensitizer" ,
+                                "RT Irritation",
+                                "Stannosis",
+                                "Upper RT Irritation"
+                           ],
+                           "default": " "
+                         },
+                         "Auditory": {
+                           "type": "string",
+                           "title": "Auditory (Hearing)",
+                           "id": "Auditory (Hearing)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Auditory (Hearing)",
+                                "Cochlear Impairment",
+                                "Ototoxicity" ,
+                                "Tinnitus" ,
+                                "Vertigo"
+                           ],
+                           "default": " "
+                         },
+                         "Other": {
+                           "type": "string",
+                           "title": "Other",
+                           "id": "Other",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                               "none",
+                               "Other",
+                               "Dizziness",
+                               "Fatigue",
+                               "Halitosis",
+                               "Headache",
+                               "Malaise",
+                               "Narcosis",
+                               "Nausea"
+                           ],
+                           "default": " "
+                         }
+
+
+                     }
+                   }
+             }
+           },
+           "default": [ ]
+         },
+        "customChemicals": {
+           "type": "array",
+           "format": "table",
+           "title": "Chemicals",
+           "class": "custom-chemicals",
+           "uniqueItems": true,
+           "items": {
+             "type": "object",
+             "title": "Custom Chemical",
+             "properties": {
+               "chemicalName": {
+                 "type": "string",
+                 "title": "Chemical Name",
+                 "id": "Chemical Name",
+                 "class": "chemical-name",
+                 "placeholder": "Chemical Name",
+                 "minLength": 2
+               },
+               "chemicalid": {
+                 "type": "string",
+                 "title": "Chemical ID",
+                 "id": "Chemical ID",
+                 "minLength": 2
+               },
+               "chemicalManufacturer": {
+                 "type": "string",
+                 "title": "Chemical Manufacturer",
+                 "id": "Chemical Manufacturer",
+                 "minLength": 2
+               },
+               "SDSdate": {
+                 "type": "string",
+                 "title": "SDS Date",
+                 "id": "date"
+               },
+               "chemicalWeight": {
+                 "type": "string",
+                 "title": "Chemical Weight",
+                 "id": "Chemical Weight"
+               },
+               "chemicalPhysicalState": {
+                 "type": "string",
+                 "title": "Physical State",
+                 "id": "Physical State",
+                 "enum": [ "gas", "liquid", "mist", "vapor", "dust", "fiber", "fume", "metal", "paste", "gel", "grease", "lube" ],
+                 "default": "gas"
+               },
+               "chemicalColor": {
+                 "type": "string",
+                 "title": "Chemical Color",
+                 "id": "Chemical Color",
+                 "enum": ["black","red","green","blue","yellow","orange","purple","brown","white","cyan","maagenta"],
+                 "default": "white"
+               },
+               "chemicalSmell": {
+                 "type": "string",
+                 "title": "Chemical Smell",
+                 "id": "Chemical Smell",
+                 "enum": ["black","red","green","blue","yellow","orange","purple","brown","white","cyan","maagenta"],
+                 "default": "white"
+               },
+               "chemicalFlashPoint": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "Flash Point (°F)",
+                 "id": "Flash Point"
+               },
+               "chemicalBoilingPoint": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "Boiling Point (°F)",
+                 "id": "Boiling Point"
+               },
+               "chemicalSolubility": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "Solubility %",
+                 "id": "Solubility %",
+                 "class": "solubility"
+               },
+               "chemicalVaporPressure": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "Vapor Pressure (mm/Hg)",
+                 "id": "Vapor Pressure (mm/Hg)",
+                 "class": "chemicalVaporPressure"
+               },
+               "chemicalEvaporationRate": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "Evaporation Rate (hrs)",
+                 "id": "Evaporation Rate (hrs)",
+                 "class": "chemicalEvaporationRate"
+               },
+               "chemicalUpperFlammabilityLimit": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "Upper Flammability Limit (%)",
+                 "id": "Upper Flammability Limit (%)",
+                 "class": "chemicalUpperFlammabilityLimit"
+               },
+               "chemicalLowerFlammabilityLimit": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "Lower Flammability Limit (%)",
+                 "id": "Lower Flammability Limit (%)",
+                 "class": "chemicalLowerFlammabilityLimit"
+               },
+               "chemicalPH": {
+                 "type": "string",
+                 "class": "PH",
+                 "format": "number",
+                 "title": "PH",
+                 "id": "PH"
+               },
+               "chemicalVaporDensity": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "Vapor Density",
+                 "id": "Vapor Density",
+                 "class": "chemicalVaporDensity"
+               },
+               "chemicalSpecificGravity": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "Specific Gravity",
+                 "id": "Specific Gravity",
+                 "class": "chemicalSpecificGravity"
+               },
+               "chemicalLC50": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "LC50 (ppm)",
+                 "id": "LC50 (ppm)",
+                 "class": "chemicalLC50"
+               },
+               "chemicalLD50Oral": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "LD50-Oral (mg/kg)",
+                 "id": "LD50-Oral (mg/kg)",
+                 "class": "chemicalLD50Oral"
+               },
+               "chemicalLD50Skin": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "LD50-Skin (mg/kg)",
+                 "id": "LD50-Skin (mg/kg)",
+                 "class": "chemicalLD50Skin"
+               },
+               "chemicalParticleSize": {
+                 "type": "string",
+                 "format": "tel",
+                 "title": "Particle Size (µm)",
+                 "id": "Particle Size (µm)",
+                 "class": "chemicalParticleSize"
+               },
+               "AirborneExposurePotential": {
+                  "type": "object",
+                  "title": "Airborne Exposure Potential ",
+                  "uniqueItems": true,
+                  "class": "airborne-exposure-potential ",
+                  "properties": {
+                      "BoilingPoint": {
+                        "type": "object",
+                        "class": "airborne-option hide-title",
+                        "properties": {
+                          "Original": {
+                              "type": "string",
+                              "title": "Boiling Point (°F)",
+                              "id": "Boiling Point (°F)",
+                              "class": "risk-compare",
+                              "enum": [
+                                "< 50 ^5",
+                                "50 ≤ 150 ^4",
+                                "150 ≤ 250 ^3",
+                                "250 ≤ 350 ^2",
+                                "> 350 ^1"
+                              ],
+                              "options": {
+                                "enum_titles": [
+                                  "< 50 ",
+                                  "50 ≤ 150",
+                                  "150 ≤ 250",
+                                  "250 ≤ 350",
+                                  "> 350 "
+                                ]
+                              }
+                          },
+                          "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                          "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                        }
+                      },
+                      "FlashPoint": {
+                        "type": "object",
+                        "class": "airborne-option hide-title",
+                        "properties": {
+                          "Original": {
+                              "type": "string",
+                              "title": "Flash Point (°F)",
+                              "id": "Flash Point (°F)",
+                              "class": "risk-compare",
+                              "enum": [
+                                  "< 50 ^5",
+                                  "50 ≤ 100 ^4",
+                                  "100 ≤ 150 ^3",
+                                  "150 ≤ 200 ^2",
+                                  "> 200 ^1"
+                              ],
+                              "options": {
+                                "enum_titles": [
+                                  "< 50",
+                                  "50 ≤ 100",
+                                  "100 ≤ 150",
+                                  "150 ≤ 200",
+                                  "> 200 "
+                                ]
+                              }
+                          },
+                          "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                          "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                        }
+                      },
+                      "VaporPressure": {
+                        "type": "object",
+                        "class": "airborne-option hide-title",
+                        "properties": {
+                          "Original": {
+                              "type": "string",
+                              "title": "Vapor Pressure (mmHg)",
+                              "id": "Vapor Pressure (mmHg)",
+                              "class": "risk-compare",
+                              "enum": [
+                                  "> 100 ^5",
+                                  "28 ≤ 100 ^4",
+                                  "10 ≤ 28 ^3",
+                                  "1 ≤ 10 ^2",
+                                  "< 1 ^1"
+                              ],
+                              "options": {
+                                "enum_titles": [
+                                  "> 100",
+                                  "28 ≤ 100",
+                                  "10 ≤ 28",
+                                  "1 ≤ 10",
+                                  "< 1"
+                                ]
+                              }
+                          },
+                          "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                          "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                        }
+                      },
+                      "EvaporationRate": {
+                        "type": "object",
+                        "class": "airborne-option hide-title",
+                        "properties": {
+                          "Original": {
+                              "type": "string",
+                              "title": "Evaporation Rate (hrs)",
+                              "id": "Evaporation Rate (hrs)",
+                              "class": "risk-compare",
+                              "enum": [
+                                    "0 to 3 ^5",
+                                    "3 to 12 ^4",
+                                    "12 to 30 ^3",
+                                    "30 to 50 ^2",
+                                    ">50 ^1"
+                              ],
+                              "options": {
+                                "enum_titles": [
+                                  "0 to 3 ",
+                                  "3 to 12",
+                                  "12 to 30 ",
+                                  "30 to 50 ",
+                                  ">50 "
+                                ]
+                              }
+                          },
+                          "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                          "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                        }
+                      },
+                      "ParticleSize": {
+                        "type": "object",
+                        "class": "airborne-option hide-title",
+                        "properties": {
+                          "Original": {
+                              "type": "string",
+                              "title": "Particle Size",
+                              "id": "Particle Size",
+                              "class": "risk-compare",
+                              "enum": [
+                                  "Ultra-Fine (< 0.1 µm, Invisible, Friable) ^5",
+                                  "Respirable Fine (0.1 ≤ 2.5 µm, Powder) ^4",
+                                  "Inhalable Fine (2.5 ≤ 10 µm, Crystalline, granular solid) ^3",
+                                  "Coarse Dust (10 µm ≤ 100 µm) ^2",
+                                  "Super Coarse (>100 µm, Non-friable solids, Pellets) ^1"
+                              ],
+                              "options": {
+                                "enum_titles": [
+                                  "Ultra-Fine (< 0.1 µm, Invisible, Friable) ",
+                                  "Respirable Fine (0.1 ≤ 2.5 µm, Powder)",
+                                  "Inhalable Fine (2.5 ≤ 10 µm, Crystalline, granular solid)",
+                                  "Coarse Dust (10 µm ≤ 100 µm)",
+                                  "Super Coarse (>100 µm, Non-friable solids, Pellets)"
+                                ]
+                              }
+                          },
+                          "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                          "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                        }
+                      }
+                  }
+                },
+                "DermalContactPotential": {
+                   "type": "object",
+                   "title": "Dermal Contact Potential",
+                   "uniqueItems": true,
+                   "class": "dermal-contact-potential",
+                   "properties": {
+                       "MolecularWeight": {
+                         "type": "object",
+                         "class": "dermal-contact-option hide-title",
+                         "properties": {
+                           "Original": {
+                               "type": "string",
+                               "title": "Molecular Weight (g/mol)",
+                               "id": "Molecular Weight (g/mol)",
+                               "class": "risk-compare",
+                               "enum": [
+                                    "> 200 ^5",
+                                    "150 ≤ 200 ^4",
+                                    "100 ≤ 150 ^3",
+                                    "50 ≤ 100 ^2",
+                                    "< 50 ^1"
+                               ],
+                               "options": {
+                                 "enum_titles": [
+                                   "> 200",
+                                   "150 ≤ 200",
+                                   "100 ≤ 150",
+                                   "50 ≤ 100",
+                                   "< 50"
+                                 ]
+                               }
+                           },
+                           "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                           "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                         }
+                       },
+                       "VaporPressure": {
+                         "type": "object",
+                         "class": "dermal-contact-option hide-title",
+                         "properties": {
+                           "Original": {
+                               "type": "string",
+                               "title": "Vapor Pressure (mmHg)",
+                               "id": "Vapor Pressure (mmHg)",
+                               "class": "risk-compare",
+                               "enum": [
+                                   "> 100 ^5",
+                                   "28 ≤ 100 ^4",
+                                   "10 ≤ 28 ^3",
+                                   "1 ≤ 10 ^2",
+                                   "< 1 ^1"
+                               ],
+                               "options": {
+                                 "enum_titles": [
+                                   "> 100",
+                                   "28 ≤ 100",
+                                   "10 ≤ 28",
+                                   "1 ≤ 10",
+                                   "< 1"
+                                 ]
+                               }
+                           },
+                           "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                           "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                         }
+                       },
+                       "EvaporationRate": {
+                         "type": "object",
+                         "class": "dermal-contact-option hide-title",
+                         "properties": {
+                           "Original": {
+                               "type": "string",
+                               "title": "Evaporation Rate (hrs)",
+                               "id": "Evaporation Rate (hrs)",
+                               "class": "risk-compare",
+                               "enum": [
+                                     "0 to 3 ^5",
+                                     "3 to 12 ^4",
+                                     "12 to 30 ^3",
+                                     "30 to 50 ^2",
+                                     ">50 ^1"
+                               ],
+                               "options": {
+                                 "enum_titles": [
+                                   "0 to 3 ",
+                                   "3 to 12",
+                                   "12 to 30 ",
+                                   "30 to 50 ",
+                                   ">50 "
+                                 ]
+                               }
+                           },
+                           "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                           "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                         }
+                       },
+                       "SizeSolubility": {
+                         "type": "object",
+                         "class": "dermal-contact-option add-multiple hide-title",
+                         "properties": {
+                           "Original": {
+                               "type": "string",
+                               "title": "Size and Solubility ",
+                               "id": "Size and Solubility ",
+                               "class": "risk-compare add-multiple",
+                               "enum": [
+                                 "none",
+                                 "Soluble (Good lipid/water solubility)  ^5",
+                                 "Very Small Particles (<1 micron in size) Semi-Soluble (Some lipid/water solubility) ^4" ,
+                                 "Small Particles (>1 micron in size) Semi-Soluble (Some lipid/water solubility) ^3",
+                                 "Large Particles (>10 micron in size) Semi-Soluble (Some lipid/water solubility) ^2",
+                                 "Large Insoluble Particles (Poor lipid/water solubility) ^1"
+                               ],
+                               "options": {
+                                 "enum_titles": [
+                                   "none",
+                                   "Soluble (Good lipid/water solubility)",
+                                   "Very Small Particles (<1 micron in size) Semi-Soluble (Some lipid/water solubility)" ,
+                                   "Small Particles (>1 micron in size) Semi-Soluble (Some lipid/water solubility)",
+                                   "Large Particles (>10 micron in size) Semi-Soluble (Some lipid/water solubility)",
+                                   "Large Insoluble Particles (Poor lipid/water solubility)"
+                                 ]
+                               }
+                           },
+                           "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                           "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                         }
+                      }
+                   }
+                 },
+                 "HealthHazards": {
+                    "type": "object",
+                    "title": "Health Hazards",
+                    "uniqueItems": true,
+                    "class": "health-hazards",
+                    "properties": {
+                        "Route": {
+                          "type": "string",
+                          "title": "Route",
+                          "id": "Route",
+                          "class": "hazards-option add-multiple hide",
+                          "enum": [
+                              "none",
+                              "CMR",
+                              "INH",
+                              "DER",
+                              "ING",
+                              "TOST"
+                          ],
+                          "default": " "
+                        },
+                        "GHSCategories": {
+                          "type": "object",
+                          "class": "hazards-option  hide-title",
+                          "properties": {
+                            "Original": {
+                                "type": "string",
+                                "title": "GHS Categories",
+                                "id": "GHS Categories",
+                                "class": "risk-compare add-multiple",
+                                "enum": [
+                                     "none",
+                                     "Carcinogenicity – Cat. 1A – Known ^5",
+                                     "Germ Cell Mutagenicity – Cat. 1A - Known ^5",
+                                     "Reproductive Toxicity -Cat. 1A - Known ^5",
+                                     "Aspiration Toxicity Cat. 1 - Known ^5",
+                                     "Acute Toxicity Cat. 1 – Severe ^5",
+                                     "Gases: ≤ 100 ppm ^5",
+                                     "Vapors: ≤ 0.5 mg/L ^5",
+                                     "Dusts & Mists: ≤ 0.05 mg/L ^5",
+                                     "Skin Cat. 1A – Corrosion ^5",
+                                     "Exp < 3 min ^5",
+                                     "Acute Toxicity Cat. 1 – Severe ^5",
+                                     "Dermal: ≤ 50 mg/kg ^5",
+                                     "Acute Toxicity Cat. 1 – Severe ^5",
+                                     "Oral: ≤ 5 mg/kg ^5",
+                                     "TOST Single Exposure Cat. 1 – Significant ^5",
+                                     "Carcinogenicity – Cat. 1B – Presumed ^4",
+                                     "Germ Cell Mutagenicity – Cat. 1B -Presumed ^4",
+                                     "Reproductive Toxicity -Cat. 1B - Presumed ^4",
+                                     "Aspiration Toxicity Cat. 2 – Presumed ^4",
+                                     "Sensitization - Respiratory ^4",
+                                     "Acute Toxicity Cat. 2 – High ^4",
+                                     "Gases: >100 ≤ 500 ppm ^4",
+                                     "Vapors: > 0.5 ≤ 2.0 mg/L ^4",
+                                     "Dusts & Mists: > 0.05 ≤ 0.5 mg/L ^4",
+                                     "Skin Cat. 1B – Corrosion ^4",
+                                     "Exp < 1 hr ^4",
+                                     "Eye Effects Cat. 1 – Serious ^4",
+                                     "Dermal: > 50 ≤ 200 mg/kg ^4",
+                                     "Acute Toxicity Cat. 2 – High ^4",
+                                     "Acute Toxicity Cat. 2 – High ^4",
+                                     "Oral: > 5 ≤ 50 mg/kg ^4",
+                                     "TOST Single Exposure Cat. 2 – Presumed ^4",
+                                     "TOST Repeated Exposure Cat. 1 – Significant ^4",
+                                     "Carcinogenicity Cat. 2 – Suspected ^3",
+                                     "Germ Cell Mutagenicity Cat. 2 - Suspected ^3",
+                                     "Reproductive Toxicity Cat. 2 – Suspected ^3",
+                                     "Reproductive Toxicity – On or Via Lactation ^3",
+                                     "Acute Toxicity Cat. 3 – ^3",
+                                     "Moderate ^3",
+                                     "Gases: > 500 ≤ 2500 ppm ^3",
+                                     "Vapors: > 2 ≤ 10 mg/L ^3",
+                                     "Dusts & Mists: > 0.5 ≤ 1.0 mg/L ^3 ",
+                                     "Skin Cat. 1C – Corrosion Exp < 4 hrs ^3",
+                                     "Eye Effects Cat. 2A – Irritant ^3",
+                                     "Sensitization - Skin ^3",
+                                     "Acute Toxicity Cat. 3 – ^3" ,
+                                     "Moderate ^3",
+                                     "Dermal: > 200 ≤ 1000 mg/kg ^3",
+                                     "Acute Toxicity Cat. 3 – ^3",
+                                     "Moderate ^3",
+                                     "Oral: > 50 ≤ 300 mg/kg ^3",
+                                     "TOST Single Exposure Cat. 3 – ^3",
+                                     "Transient Effects ^3",
+                                     "TOST Repeated Exposure Cat. 2 – Presumed ^3",
+                                     "Acute Toxicity Cat. 4 – Mild ^2",
+                                     "Gases: > 2500 ≤ 5000 ppm ^2",
+                                     "Vapors: > 10 ≤ 20 mg/L ^2",
+                                     "Dusts & Mists: > 1 ≤ 5 mg/L ^2" ,
+                                     "Skin Cat. 2 – Irritation ^2",
+                                     "Eye Effects Cat. 2B – Mild Irritant ^2",
+                                     "Acute Toxicity Cat. 4 – Mild ^2",
+                                     "Dermal: > 1000 ≤ 2000 mg/kg ^2",
+                                     "Acute Toxicity Cat. 4 – Mild ^2",
+                                     "Oral: > 300 ≤ 2000 mg/kg ^2",
+                                     "Acute Toxicity Cat. 5 – Low ^1",
+                                     "Gases: > 5000 ppm ^1",
+                                     "Vapors: > 20 mg/L ^1",
+                                     "Dusts & Mists: > 5 mg/L ^1",
+                                     "Skin Cat. 3 – Mild Irritation ^1",
+                                     "Acute Toxicity Cat. 5 – Low ^1",
+                                     "Dermal: > 2000 mg/kg ^1",
+                                     "Acute Toxicity Cat. 5 – Low ^1",
+                                     "Oral: > 2000 mg/kg ^1"
+                                ],
+                                "options": {
+                                  "enum_titles": [
+                                    "none",
+                                    "Carcinogenicity – Cat. 1A – Known",
+                                    "Germ Cell Mutagenicity – Cat. 1A - Known",
+                                    "Reproductive Toxicity -Cat. 1A - Known",
+                                    "Aspiration Toxicity Cat. 1 - Known",
+                                    "Acute Toxicity Cat. 1 – Severe",
+                                    "Gases: ≤ 100 ppm",
+                                    "Vapors: ≤ 0.5 mg/L",
+                                    "Dusts & Mists: ≤ 0.05 mg/L",
+                                    "Skin Cat. 1A – Corrosion ",
+                                    "Exp < 3 min",
+                                    "Acute Toxicity Cat. 1 – Severe",
+                                    "Dermal: ≤ 50 mg/kg",
+                                    "Acute Toxicity Cat. 1 – Severe",
+                                    "Oral: ≤ 5 mg/kg",
+                                    "TOST Single Exposure Cat. 1 – Significant",
+                                    "Carcinogenicity – Cat. 1B – Presumed",
+                                    "Germ Cell Mutagenicity – Cat. 1B -Presumed",
+                                    "Reproductive Toxicity -Cat. 1B - Presumed",
+                                    "Aspiration Toxicity Cat. 2 – Presumed",
+                                    "Sensitization - Respiratory",
+                                    "Acute Toxicity Cat. 2 – High",
+                                    "Gases: >100 ≤ 500 ppm",
+                                    "Vapors: > 0.5 ≤ 2.0 mg/L",
+                                    "Dusts & Mists: > 0.05 ≤ 0.5 mg/L",
+                                    "Skin Cat. 1B – Corrosion",
+                                    "Exp < 1 hr",
+                                    "Eye Effects Cat. 1 – Serious",
+                                    "Dermal: > 50 ≤ 200 mg/kg",
+                                    "Acute Toxicity Cat. 2 – High",
+                                    "Acute Toxicity Cat. 2 – High",
+                                    "Oral: > 5 ≤ 50 mg/kg",
+                                    "TOST Single Exposure Cat. 2 – Presumed",
+                                    "TOST Repeated Exposure Cat. 1 – Significant",
+                                    "Carcinogenicity Cat. 2 – Suspected",
+                                    "Germ Cell Mutagenicity Cat. 2 - Suspected",
+                                    "Reproductive Toxicity Cat. 2 – Suspected",
+                                    "Reproductive Toxicity – On or Via Lactation",
+                                    "Acute Toxicity Cat. 3 –",
+                                    "Moderate",
+                                    "Gases: > 500 ≤ 2500 ppm",
+                                    "Vapors: > 2 ≤ 10 mg/L",
+                                    "Dusts & Mists: > 0.5 ≤ 1.0 mg/L",
+                                    "Skin Cat. 1C – Corrosion Exp < 4 hrs",
+                                    "Eye Effects Cat. 2A – Irritant",
+                                    "Sensitization - Skin",
+                                    "Acute Toxicity Cat. 3 –" ,
+                                    "Moderate",
+                                    "Dermal: > 200 ≤ 1000 mg/kg",
+                                    "Acute Toxicity Cat. 3 –",
+                                    "Moderate",
+                                    "Oral: > 50 ≤ 300 mg/kg",
+                                    "TOST Single Exposure Cat. 3 –",
+                                    "Transient Effects",
+                                    "TOST Repeated Exposure Cat. 2 – Presumed",
+                                    "Acute Toxicity Cat. 4 – Mild",
+                                    "Gases: > 2500 ≤ 5000 ppm",
+                                    "Vapors: > 10 ≤ 20 mg/L",
+                                    "Dusts & Mists: > 1 ≤ 5 mg/L" ,
+                                    "Skin Cat. 2 – Irritation",
+                                    "Eye Effects Cat. 2B – Mild Irritant",
+                                    "Acute Toxicity Cat. 4 – Mild",
+                                    "Dermal: > 1000 ≤ 2000 mg/kg",
+                                    "Acute Toxicity Cat. 4 – Mild",
+                                    "Oral: > 300 ≤ 2000 mg/kg",
+                                    "Acute Toxicity Cat. 5 – Low",
+                                    "Gases: > 5000 ppm",
+                                    "Vapors: > 20 mg/L",
+                                    "Dusts & Mists: > 5 mg/L",
+                                    "Skin Cat. 3 – Mild Irritation",
+                                    "Acute Toxicity Cat. 5 – Low",
+                                    "Dermal: > 2000 mg/kg",
+                                    "Acute Toxicity Cat. 5 – Low",
+                                    "Oral: > 2000 mg/kg"
+                                  ]
+                                }
+                            },
+                            "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                            "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                          }
+                        },
+                        "HazardStatements": {
+                          "type": "object",
+                          "class": "hazards-option hide-title",
+                          "properties": {
+                            "Original": {
+                                "type": "string",
+                                "title": "Hazard Statements",
+                                "id": "Hazard Statements",
+                                "class": "risk-compare add-multiple",
+                                "enum": [
+                                  "none",
+                                  "H340 – May cause genetic defects ^5",
+                                  "H350 – May cause cancer ^5",
+                                  "H360 – May damage fertility or the unborn child ^5",
+                                  "H330 – Fatal if inhaled ^5",
+                                  "H310 – Fatal in contact with skin ^5",
+                                  "H300 – Fatal if swallowed ^5",
+                                  "H370 – Causes damage to organs ^5",
+                                  "H341 – Suspected of causing genetic defects ^4",
+                                  "H351 – Suspected of causing cancer ^4",
+                                  "H361 – Suspected of damaging fertility or the unborn child ^4",
+                                  "H361d – Suspected of damaging the unborn child ^4",
+                                  "H331 – Toxic if inhaled ^4",
+                                  "H334 – May cause allergy or asthma symptoms or breathing difficulties if inhaled ^4",
+                                  "H311 – Toxic in contact with skin ^4",
+                                  "H314 – Causes severe skin burns and eye damage ^4",
+                                  "H318 – Causes serious eye damage ^4",
+                                  "H301 – Toxic if swallowed ^4",
+                                  "H304 – May be fatal if swallowed and enters airways. ^4",
+                                  "H371 – May cause damage to organs ^4",
+                                  "H372 – Causes damage to organs through prolonged or repeated exposure ^4",
+                                  "H362 – May cause harm to breast-fed children ^3",
+                                  "H332 – Harmful if inhaled ^3",
+                                  "H335 – May cause respiratory irritation ^3",
+                                  "H312 – Harmful in contact with skin ^3",
+                                  "H317 – May cause an allergic skin reaction ^3",
+                                  "H319 – Causes serious eye irritation ^3",
+                                  "H302 – Harmful if swallowed ^3",
+                                  "H373 – May cause damage to organs through prolonged or repeated exposure ^3",
+                                  "H336 – May cause drowsiness or dizziness ^3",
+                                  "H333 – May be harmful if inhaled ^2" ,
+                                  "H313 – May be harmful in contact with skin ^2",
+                                  "H315 – Causes skin irritation ^2",
+                                  "H320 – Causes eye irritation ^2" ,
+                                  "H303 – May be harmful if swallowed ^2",
+                                  "H305 – May be harmful if swallowed and enters airway ^2",
+                                  "H316 – Causes mild skin irritation ^1"
+                                ],
+                                "options": {
+                                  "enum_titles": [
+                                    "none",
+                                    "H340 – May cause genetic defects",
+                                    "H350 – May cause cancer",
+                                    "H360 – May damage fertility or the unborn child",
+                                    "H330 – Fatal if inhaled",
+                                    "H310 – Fatal in contact with skin",
+                                    "H300 – Fatal if swallowed",
+                                    "H370 – Causes damage to organs",
+                                    "H341 – Suspected of causing genetic defects",
+                                    "H351 – Suspected of causing cancer",
+                                    "H361 – Suspected of damaging fertility or the unborn child",
+                                    "H361d – Suspected of damaging the unborn child",
+                                    "H331 – Toxic if inhaled",
+                                    "H334 – May cause allergy or asthma symptoms or breathing difficulties if inhaled",
+                                    "H311 – Toxic in contact with skin",
+                                    "H314 – Causes severe skin burns and eye damage",
+                                    "H318 – Causes serious eye damage",
+                                    "H301 – Toxic if swallowed",
+                                    "H304 – May be fatal if swallowed and enters airways.",
+                                    "H371 – May cause damage to organs",
+                                    "H372 – Causes damage to organs through prolonged or repeated exposure",
+                                    "H362 – May cause harm to breast-fed children",
+                                    "H332 – Harmful if inhaled",
+                                    "H335 – May cause respiratory irritation",
+                                    "H312 – Harmful in contact with skin",
+                                    "H317 – May cause an allergic skin reaction",
+                                    "H319 – Causes serious eye irritation",
+                                    "H302 – Harmful if swallowed",
+                                    "H373 – May cause damage to organs through prolonged or repeated exposure",
+                                    "H336 – May cause drowsiness or dizziness",
+                                    "H333 – May be harmful if inhaled" ,
+                                    "H313 – May be harmful in contact with skin",
+                                    "H315 – Causes skin irritation",
+                                    "H320 – Causes eye irritation" ,
+                                    "H303 – May be harmful if swallowed",
+                                    "H305 – May be harmful if swallowed and enters airway",
+                                    "H316 – Causes mild skin irritation"
+                                  ]
+                                }
+                            },
+                            "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                            "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                          }
+                        },
+                        "RiskStatements": {
+                          "type": "object",
+                          "class": "hazards-option hide-title",
+                          "properties": {
+                            "Original": {
+                                "type": "string",
+                                "title": "Risk Statements",
+                                "id": "Risk Statements",
+                                "class": "risk-compare add-multiple",
+                                "enum": [
+                                  "none",
+                                  "R45(1) – Cancer – Known ^5",
+                                  "R46(1) – Mutagen – Known ^5",
+                                  "R49(1) – Cancer by inhalation – Known ^5",
+                                  "R60(1) – Impairs Fertility – Known ^5",
+                                  "R61(1) – Harm to unborn child – Known ^5",
+                                   "R26 – Very toxic by inhalation ^5",
+                                   "R27 – Very toxic in contact with skin ^5",
+                                   "R28 – Very toxic if swallowed ^5",
+                                   "R45(2) – Cancer – Presumed ^4",
+                                   "R46(2) – Mutagen – Presumed ^4",
+                                   "R49(2) – Cancer by inhalation – Presumed ^4",
+                                   "R60(2) – Impairs Fertility – Presumed ^4",
+                                   "R61(2) – Harm to unborn child – Presumed ^4",
+                                   "R23 – Toxic by inhalation ^4",
+                                   "R42 – May cause sensitization by inhalation ^4",
+                                   "R24 – Toxic in contact with skin ^4",
+                                   "R35 – Causes severe burns ^4",
+                                   "R41 – Risk of serious damage to eyes ^4",
+                                   "R25 – Toxic if swallowed ^4",
+                                   "R39 – Danger of very serious irreversible effects ^4",
+                                   "R62 – Possible risk of impaired fertility ^3",
+                                   "R63 – Possible risk of harm to the unborn child ^3",
+                                   "R64 – May cause harm to breast fed babies ^3",
+                                   "R20 – Harmful by Inhalation ^3",
+                                   "R37 – Irritating to the respiratory system ^3",
+                                   "R21 – Harmful with contact with skin ^3",
+                                   "R34 – Causes burns ^3",
+                                   "R36 – Irritating to the eyes ^3",
+                                   "R43 – May cause sensitization by skin contact ^3",
+                                   "R22 – Harmful if swallowed ^3",
+                                   "R40(3)– Possible risk of irreversible effects ^3",
+                                   "R48 – Danger of serious damage to health by prolonged exposure ^3",
+                                   "R67 – Vapors may cause drowsiness and dizziness ^3",
+                                   "R38 – Irritating to the skin ^2",
+                                   "R66 – Repeated exposure may cause skin dryness or cracking ^2"
+                                ],
+                                "options": {
+                                  "enum_titles": [
+                                    "none",
+                                    "R45(1) – Cancer – Known",
+                                    "R46(1) – Mutagen – Known",
+                                    "R49(1) – Cancer by inhalation – Known",
+                                    "R60(1) – Impairs Fertility – Known",
+                                    "R61(1) – Harm to unborn child – Known",
+                                     "R26 – Very toxic by inhalation",
+                                     "R27 – Very toxic in contact with skin",
+                                     "R28 – Very toxic if swallowed",
+                                     "R45(2) – Cancer – Presumed",
+                                     "R46(2) – Mutagen – Presumed",
+                                     "R49(2) – Cancer by inhalation – Presumed",
+                                     "R60(2) – Impairs Fertility – Presumed",
+                                     "R61(2) – Harm to unborn child – Presumed",
+                                     "R23 – Toxic by inhalation",
+                                     "R42 – May cause sensitization by inhalation",
+                                     "R24 – Toxic in contact with skin",
+                                     "R35 – Causes severe burns",
+                                     "R41 – Risk of serious damage to eyes",
+                                     "R25 – Toxic if swallowed",
+                                     "R39 – Danger of very serious irreversible effects",
+                                     "R62 – Possible risk of impaired fertility",
+                                     "R63 – Possible risk of harm to the unborn child",
+                                     "R64 – May cause harm to breast fed babies",
+                                     "R20 – Harmful by Inhalation",
+                                     "R37 – Irritating to the respiratory system",
+                                     "R21 – Harmful with contact with skin",
+                                     "R34 – Causes burns",
+                                     "R36 – Irritating to the eyes",
+                                     "R43 – May cause sensitization by skin contact",
+                                     "R22 – Harmful if swallowed",
+                                     "R40(3)– Possible risk of irreversible effects",
+                                     "R48 – Danger of serious damage to health by prolonged exposure",
+                                     "R67 – Vapors may cause drowsiness and dizziness",
+                                     "R38 – Irritating to the skin",
+                                     "R66 – Repeated exposure may cause skin dryness or cracking"
+                                  ]
+                                }
+                            },
+                            "Value": {  "type": "string",  "class": "risk-value hide",  "format": "hidden"   },
+                            "Rating": {  "type": "string", "class": "risk-rating hide", "format": "hidden"   }
+                          }
+                      }
+                    }
+                  },
+                  "TargetOrganEffects": {
+                     "type": "object",
+                     "title": "Target Organ Effects (Select All That Apply)",
+                     "uniqueItems": true,
+                     "class": "target-organ-effects",
+                     "properties": {
+                         "Cardiovascular": {
+                           "type": "string",
+                           "title": "Cardiovascular (Heart and Blood Vessels)",
+                           "id": "Cardiovascular (Heart and Blood Vessels)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Cardiovascular (Heart and Blood Vessels)",
+                                "Argyria",
+                                "Cardiac Impairment",
+                                "Cardiac Sensitization",
+                                "Myocardial Effects",
+                                "Vasoconstriction",
+                                "Vasodilation",
+                                "Vascular System Impairment"
+                           ],
+                           "default": " "
+                         },
+                         "Cutaneous": {
+                           "type": "string",
+                           "title": "Cutaneous (Skin)",
+                           "id": "Cutaneous (Skin)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Cutaneous (Skin)",
+                                "Beryllium Sensitization",
+                                "Chloracne",
+                                "Dermatitis",
+                                "Skin Irritation",
+                                "Skin Damage",
+                                "Skin Cancer",
+                               "Skin Sensitizer"
+                           ],
+                           "default": " "
+                         },
+                         "Endocrine": {
+                           "type": "string",
+                           "title": "Endocrine (Thyroid and Hormones)",
+                           "id": "Endocrine (Thyroid and Hormones)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Endocrine (Thyroid and Hormones)",
+                                "Adrenal Gland",
+                                "Basal Metabolism" ,
+                                "Body Weight Effect",
+                                "Hypothyroidism",
+                                "Thyroid Effects"
+                           ],
+                           "default": " "
+                         },
+                         "Gastrointestinal": {
+                           "type": "string",
+                           "title": "Gastrointestinal (Mouth, Stomach, GI Tract)",
+                           "id": "Gastrointestinal (Mouth, Stomach, GI Tract)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Gastrointestinal (Mouth, Stomach, GI Tract)",
+                                "Bladder Cancer",
+                                "Bladder Irritation" ,
+                                "GI Damage",
+                                "GI Irritation",
+                                "Larynx Metaplasia",
+                                "Spleen Damage"
+                           ],
+                           "default": " "
+                         },
+                         "Hematopoietic": {
+                           "type": "string",
+                           "title": "Hematopoietic (Blood)",
+                           "id": "Hematopoietic (Blood)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Hematopoietic (Blood)",
+                                "Anemia",
+                                "Aplastic Anemia " ,
+                                "Carboxyhemoglobin (CoHb-emia)",
+                                "Coagulation",
+                                "Cyanosis",
+                                "Hematologic Effect",
+                                "Hemolysis",
+                                "Hemolytic Anemia",
+                                "Hypoxia",
+                                "Immune Effect",
+                                "Leukemia",
+                                "Methemoglobinemia (MeHb-emia)",
+                                "Nitrosyl Hemoglobin (NoHb-emia) ",
+                                "Porphyrin Effect"
+                           ],
+                           "default": " "
+                         },
+                         "Hepatotoxins": {
+                           "type": "string",
+                           "title": "Hepatotoxins (Liver)",
+                           "id": "Hepatotoxins (Liver)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Hepatotoxins (Liver)",
+                                "Hemosiderosis",
+                                "Liver Cancer",
+                                "Liver Damage",
+                                "Liver Effect",
+                                "Liver Impairment"
+                           ],
+                           "default": " "
+                         },
+                         "Musculoskeletal": {
+                           "type": "string",
+                           "title": "Musculoskeletal (Muscles and Skeleton)",
+                           "id": "Musculoskeletal (Muscles and Skeleton)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Musculoskeletal (Muscles and Skeleton)",
+                                "Bone Cancer",
+                                "Bone Damage",
+                                "Dental erosion",
+                                "Fluorosis",
+                                "Muscular Stimulant"
+                           ],
+                           "default": " "
+                         },
+                         "Nephrotoxins": {
+                           "type": "string",
+                           "title": "Nephrotoxins (Kidneys)",
+                           "id": "Nephrotoxins (Kidneys)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Nephrotoxins (Kidneys)",
+                                "Hemosiderosis",
+                                "Kidney Cancer",
+                                "Kidney Damage (Nephropathy)",
+                                "Kidney Impairment",
+                                "Kidney Tubular Damage",
+                                "Renal Toxicity"
+                           ],
+                           "default": " "
+                         },
+                         "Neurotoxins": {
+                           "type": "string",
+                           "title": "Neurotoxins (Nervous System)",
+                           "id": "Neurotoxins (Nervous System)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Neurotoxins (Nervous System)",
+                                "ANS Impairment",
+                                "Cholinesterase Inhibition",
+                                "CNS Convulsion",
+                                "CNS Impairment",
+                                "Cognitive Decrement",
+                                "Neurotoxicity",
+                                "PNS Impairment"
+                           ],
+                           "default": " "
+                         },
+                         "Ocular": {
+                           "type": "string",
+                           "title": " Ocular (Eye)",
+                           "id": "Ocular (Eye)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Ocular (Eye)",
+                                "Cataract" ,
+                                "Eye Damage",
+                                "Eye Irritation",
+                                "Eye Photosensation",
+                                "Visual Impairment"
+                           ],
+                           "default": " "
+                         },
+                         "Reproductive": {
+                           "type": "string",
+                           "title": "Reproductive",
+                           "id": "Reproductive",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Reproductive",
+                                "Embryo Damage",
+                                "Embryo/Fetal Damage ",
+                                "Female Reproductive Damage",
+                                "Male Reproductive Damage",
+                                "Mutagenic Effect",
+                                "Neonatal Toxicity",
+                                "Pregnancy Loss",
+                                "Teratogenic Effect",
+                                "Testicular Damage"
+                           ],
+                           "default": " "
+                         },
+                         "Pulmonary": {
+                           "type": "string",
+                           "title": "Pulmonary (Respiratory)",
+                           "id": "Pulmonary (Respiratory)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Pulmonary (Respiratory)",
+                                "Asbestosis" ,
+                                "Anosmia",
+                                "Asthma",
+                                "Berylliosis",
+                                "Bronchiolitis Obliterans-like Illness",
+                                "Bronchitis",
+                                "Byssinosis" ,
+                                "Hemosiderosis" ,
+                                "Lower RT Irritation",
+                                "Lung Damage",
+                                "Lung Cancer",
+                                "Mesothelioma",
+                                "Metal fume fever",
+                                "Nasal Cancer",
+                                "Pneumoconiosis",
+                                "Pneumonitis",
+                                "Pulmonary Edema",
+                                "Pulmonary Emphysema",
+                                "Pulmonary Fibrosis",
+                                "Respiratory Sensitizer" ,
+                                "RT Irritation",
+                                "Stannosis",
+                                "Upper RT Irritation"
+                           ],
+                           "default": " "
+                         },
+                         "Auditory": {
+                           "type": "string",
+                           "title": "Auditory (Hearing)",
+                           "id": "Auditory (Hearing)",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                                "Auditory (Hearing)",
+                                "Cochlear Impairment",
+                                "Ototoxicity" ,
+                                "Tinnitus" ,
+                                "Vertigo"
+                           ],
+                           "default": " "
+                         },
+                         "Other": {
+                           "type": "string",
+                           "title": "Other",
+                           "id": "Other",
+                           "class": "organ-option add-multiple",
+                           "enum": [
+                                "none",
+                               "Other",
+                               "Dizziness",
+                               "Fatigue",
+                               "Halitosis",
+                               "Headache",
+                               "Malaise",
+                               "Narcosis",
+                               "Nausea"
+                           ],
+                           "default": " "
+                         }
+                     }
+                   }
+
+
+               }
+           },
+           "default": [ ]
+         }
+      }
+    }

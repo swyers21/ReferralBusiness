@@ -1,0 +1,41 @@
+<!-- Dropdown Structure -->
+<ul id="dropdown-navmenu" class="dropdown-content">
+  <li><a href="/settings">Settings</a></li>
+  <li class="divider"></li>
+  <li><a href="/" onclick="signout(signout)" >
+    <i class="icon-input right"></i>
+    Log Out
+  </a>
+</li>
+</ul>
+<nav>
+  <div class="nav-wrapper z-depth-3">
+    <a href="{{ site.baseurl }}/index.html" class="logo-set left">
+        <!-- <img src="{{ site.logo }}" alt="{{ site.title }} logo" class="hide-on-small-only logo" /> -->
+        <span class="logo icon-globe fa-3x hide-on-small-only left"></span>
+        <h1 class="title">{{ site.title }} </h1>
+    </a>
+    <ul class="right app-nav print-hide">
+      <li data-target="slide-out" class="sidenav-trigger">
+        <a href="#" >
+            <span class="hide-on-med-and-down">Menu </span>
+            <i class="icon-menu"></i>
+        </a>
+      </li>
+      <li class="hide-on-small-only">
+          <a class="waves-effect user name" href="{{ "/profile/" | prepend: site.baseurl }}" aria-selected="true">
+                <i class="icon-account_circle"></i>
+          </a>
+      </li>
+      <!-- Dropdown Trigger -->
+     <li>
+       <a class="settings-trigger" href="#!" data-target="dropdown-navmenu">
+         <i class="icon-settings"></i>
+       </a>
+     </li>
+
+      <!-- <li><a href="" class="icon fa-user username">  </a></li> -->
+      <!-- <li class="inactive logout" > <a href="/" class="button small logout" onclick="signout(signout)">Log out</a> </li> -->
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,39 @@
+---
+layout: page
+title: Contact Us
+description: Send us a message and we will respond asap!
+basic: contact
+permalink: /contact/
+published: true
+menu: true
+icon: phone1
+---
+
+<section id="{{page.basic}}" class="  login">
+	<div class="row">
+	    <form >
+	        <div class="input-field col s12 m6 l6">
+	          <input id="contact_name" type="text" class="validate" name="name">
+	          <label for="icon-prefix">Name</label>
+	        </div>
+	        <div class="input-field col s12 m6 l6">
+	          <input id="contact_phone" type="tel" class="validate phone invalid" data-length="10" name="phone">
+	          <label for="icon_telephone">Telephone</label>
+	        </div>
+					<div class="input-field col s12 ">
+						<input id="contact_email" type="email" class="validate" name="contact_email">
+						<label for="email">Email</label>
+						<span class="helper-text" data-error="wrong" data-success="aHHHHH that's better. :)"> Please enter an email address for us to reply to, thx.</span>
+					</div>
+					<div class="input-field col s12"> 
+						<textarea name="message" id="contact_message" class="materialize-textarea message" data-length="300"></textarea>
+						<label for="textarea1">Message</label>
+					</div>
+					<div class="col s6">
+						<div class="input-field col s12 m6 l6">
+							<button class="btn send-message" > Send </button>
+						</div>
+					</div>
+	    </form>
+	</div>
+</section>

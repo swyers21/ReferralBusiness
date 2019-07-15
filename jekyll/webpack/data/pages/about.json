@@ -1,0 +1,9 @@
+{
+  "filename": "about.html",
+  "PAGE_TEMPLATE": "./webpack/index.html",
+   "meta": {
+     "title": "About Lawntology",
+     "description": "leanr about our Lawncare and Landscaping company",
+     "author": "Lawntology"
+   }
+}

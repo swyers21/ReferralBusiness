@@ -9,8 +9,7 @@ exclude: ['node_modules']
 # Site settings
 title: Christina Swyers Living
 brandname: Christina Swyers Living
-description: |
-    Referral Business
+description: | Referral Business
 owner: Convergancegroup.com
 phone:  314-629-5867
 first_published: 2019 # if migrating another site, the year of your first publish

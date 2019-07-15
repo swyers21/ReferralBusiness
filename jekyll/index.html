@@ -1,0 +1,129 @@
+---
+layout: default
+title: TERAChain
+description: Chemical Risk Managemnt <br/> Get the best in <strong>Commercial</strong> Risk Assessments services.
+image: '/images/grinding-video-image.jpg'
+webp: '/images/grinding-video-image.webp'
+---
+				<!-- Banner -->
+					<section id="banner" class="container">
+								<div class="image bg-image">
+									<picture>
+										<source srcset="{{my_page.webp}}" type="image/webp">
+										<source srcset="{{my_page.image}}" type="image/jpeg">
+										<img class="bg-image" src="{{my_page.image}}" alt="{{ my_page.title }}" />
+									</picture>
+								</div>
+
+								<div class="inner">
+									<h2>{{ page.title }}</h2>
+									<p>{{ page.description}}</p>
+									<!-- <ul class="actions">
+										<li><a href="tel:{{site.phone}}" class="button special">Hire Us {{site.phone}}</a></li>
+									</ul> -->
+								</div>
+								<a href="#one" class="more scrolly style1">Learn More <br />
+									<!-- <i class="icon fa-caret-down fa-5x"></i>  -->
+								  <i class="icon-arrow_downward fa-3x"></i>
+								</a>
+
+					</section>
+
+				<!-- One -->
+					<section id="one" class="container style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Comprehensive Risk Assessment Service </h2>
+								<p>{{site.title}} provides the highest grade Assessments based on years of experience.</p>
+							</header>
+							<ul class="icons major">
+								<li><span class="major style2"><i class="icon-fire fa-3x" > </i>
+									<!-- <span class="label">Risk Management</span> -->
+								</span></li>
+								<li><span class="major style2"><i class="icon-heart fa-3x"> </i>
+									<!-- <span class="label">Chemical Data</span> -->
+								</span></li>
+								<li><span class="major style4"><i class="icon-tree fa-3x"> </i>
+									<!-- <span class="label">Work Place Saftey</span> -->
+								</span></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="container alt style2">
+						{% for my_page in site.pages %}
+							{% if my_page.service %}
+							<section class="spotlight">
+								<div class="image">
+									<picture>
+									  <source srcset="{{my_page.webp}}" type="image/webp">
+									  <source srcset="{{my_page.image}}" type="image/jpeg">
+									  <img src="{{my_page.image}}" alt="{{ my_page.title }}" />
+									</picture>
+								</div>
+
+									<div class="content">
+									<h2>{{ my_page.title }}</h2>
+									 <p> {{ my_page.description }} </p>
+									<a href="{{ my_page.url | prepend: site.baseurl }}">
+										<button class="mdc-button special mdc-button--unelevated">
+										  <span class="mdc-button__label">Try our {{ my_page.title }} services</span>
+										</button>
+									</a>
+								</div>
+							</section>
+							{% endif %}
+						{% endfor %}
+					</section>
+
+				<!-- Three
+					<section id="three" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Accumsan mus tortor nunc aliquet</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+							</header>
+							<ul class="features">
+								<li class="icon fa fa-leaf">
+									<h3>Arcu accumsan</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-laptop">
+									<h3>Ac Augue Eget</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-code">
+									<h3>Mus Scelerisque</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-headphones">
+									<h3>Mauris Imperdiet</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-heart-o">
+									<h3>Aenean Primis</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-flag-o">
+									<h3>Tortor Ut</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+							</ul>
+						</div>
+					</section>
+				-->
+				<!-- CTA -->
+					<section id="cta" class="container ">
+						<div class="inner">
+							<header>
+								<h2>Try {{site.brandname}}</h2>
+								<p> Sign up for free today!</p>
+							</header>
+							<ul class="actions vertical">
+								<li><a href="/register/" class="button fit special">Join Us</a></li>
+								<li><a href="/about/" class="button fit">Learn More</a></li>
+							</ul>
+						</div>
+					</section>

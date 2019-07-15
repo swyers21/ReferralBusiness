@@ -1,0 +1,54 @@
+---
+layout: app
+title: Settings
+singular: setting
+permalink: /settings/
+app: settings
+menu: false
+icon: settings_applications
+---
+
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s5">
+          <input placeholder="First Name" class="first-name validate" type="text" value="">
+          <label for="first_name">First Name</label>
+        </div>
+
+        <div class="input-field col s5">
+          <input   type="text" class="last-name validate" placeholder="Last Name" value="">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+          <div class="input-field col s5">
+            <input type="text" name="profile-address" class="address validate" placeholder="Address" value="">
+            <label for="profile_address">Address</label>
+            <!-- <span class="helper-text" data-error="wrong" data-success="right"> address</span> -->
+          </div>
+          <div class="input-field col s5">
+            <input type="text" name="profile-phone" class="phone validate" value="" placeholder="Phone" />
+            <label for="profile_phone">Phone</label>
+            <!-- <span class="helper-text" data-error="wrong" data-success="right"> Phone </span> -->
+          </div>
+      </div>
+      <div class="row">
+          <div class="input-field col s5">
+          </div>
+          <div class="input-field col s5">
+            <div class="file-field input-field">
+              <div class="btn">
+                <span>Profile Image</span>
+                <input type="file">
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </form>
+  </div>
+  <a href="#" class="btn update-settings" > Save </a>

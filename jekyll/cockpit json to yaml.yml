@@ -1,0 +1,309 @@
+---
+- title: Lawn Mowing
+  description: Lawntology provides weekly lawn maintenance for both residential and
+    commercial properties.
+  content: |-
+    <p>Lawntology provides weekly lawn maintenance for both residential and commercial properties.Our weekly Lawn Maintenance service includes mowing, trimming, edging, and blowing.</p>
+    <p>We make it EASY on our customers. Our billing process is simple and convenient. Once we have you in our system you can pay with a click of a button.</p>
+    <p>We can email invoices weekly or monthly and accept cash, check, credit, or debit. Give us a call today and let our professionals bring out the best in your lawn.</p>
+  image:
+    path: http://lawntology.com/cockpit/storage/uploads/lawn-mowing-photo.jpg
+  tags: ''
+  category: services
+  _mby: 5ac3f8c65e61adoc902899232
+  _by: 5ac3f347bffe2doc1836052220
+  _modified: 1530629048
+  _created: 1522792894
+  _id: 5ac3f9bee5679doc281962866
+  url: "/lawn-mowing"
+  published: true
+  _order: 0
+- title: Mulch Installation
+  description: "  Mulch is an easy and inexpensive way to highlight the features of
+    your landscaping."
+  content: |-
+    <p><img style="float: left;" src="/storage/uploads/mulch.jpg" alt="" width="227" height="275" />Mulch is an easy and inexpensive way to highlight the features of your landscaping.</p>
+    <p>Our double cut dark brown bark mulch is our standard for any flower bed or tree. Don't want our standard mulch? We have a variety to choose from.</p>
+    <p>Have outdated mulch or need new mulch installed? Give us a call and let us spruce up your landscaping by giving you a fresh look.</p>
+  image:
+    path: http://lawntology.com/cockpit/storage/uploads/mulch.jpg
+  tags: ''
+  category: services
+  url: "/mulch"
+  _mby: 5ac3f8c65e61adoc902899232
+  _by: 5ac3f8c65e61adoc902899232
+  _modified: 1523478706
+  _created: 1522869611
+  _id: 5ac5256b998bddoc1231531496
+  published: true
+  _order: 1
+- title: Hedge Trimming
+  description: Add character and geometry to your Landscape with hedge trimming.  Let
+    our professionals reshape your overgrown bushes and add to your curb appeal!
+  content: |-
+    <p>Neatly shaped hedges adds geometry and character that brings your landscaping together.</p>
+    <p>Freshly trimmed hedges provides a clean look to your curb appeal that every home owner wants.</p>
+    <p><br /> We can clean up bushes of any shape and size. Give us a call today to have your bushes professionally pruned.</p>
+  image:
+    path: http://lawntology.com/cockpit/storage/uploads/hedge-trimming.jpg
+  tags:
+  - 'hedging '
+  - trimming
+  - landscaping
+  category: services
+  url: "/hedge-trimming"
+  _mby: 5ac3f8c65e61adoc902899232
+  _by: 5ac3f8c65e61adoc902899232
+  _modified: 1523478706
+  _created: 1522869695
+  _id: 5ac525bf4e5c9doc1987793462
+  published: true
+  _order: 2
+- title: Fertilizer
+  description: Our unique 6 step fertilization process will keep your yard green,
+    healthy, and thick all year long.  The thicker the grass the easier to stripe!
+  content: |-
+    <p>We have a unique 6 step fertilization process that will give your lawn the nutrients it needs to grow green, healthy, and thick all season long.</p>
+    <p><br /> Let us pamper your yard this year. Schedule our professionals to apply fertilizer today!</p>
+  image:
+    path: http://lawntology.com/cockpit/storage/uploads/lawn-fertilizing.jpg
+  tags:
+  - fertilizer
+  category: services
+  url: "/fertilizer"
+  _mby: 5ac3f8c65e61adoc902899232
+  _by: 5ac3f8c65e61adoc902899232
+  _modified: 1523478706
+  _created: 1522869768
+  _id: 5ac52608015d0doc1301794412
+  published: true
+  _order: 3
+- title: Leaf Removal
+  description: If raking and bagging isn't your thing give us a call.  Our commercial
+    grade equipment will scoop up and mulch those leaves in no time.
+  content: |-
+    <p>Its that time of year again.</p>
+    <p>Those pesky leaves never stop falling.</p>
+    <p>If you need help our high end commercial equipment will have those leaves gone in no time.</p>
+    <p>&nbsp;</p>
+  image:
+    path: http://lawntology.com/cockpit/storage/uploads/blow-leaves.jpg
+  tags:
+  - leaf removal
+  - leaf blowing
+  category: services
+  url: "/leaf-removal"
+  _mby: 5ac3f8c65e61adoc902899232
+  _by: 5ac3f8c65e61adoc902899232
+  _modified: 1523478706
+  _created: 1522869830
+  _id: 5ac526462fbabdoc120360288
+  published: true
+  _order: 4
+- title: Clean Up
+  description: Have yard waste laying around or need a bush removed?  No problem,
+    Give us a call and we'll come take care of it.
+  content: "<p>After the occasional DIY project there's yard trimming or clutter to
+    haul away.<br /> Give us a call we'll come get it for you. Need overgrowth cut
+    back, vines or bushes removed? No problem we can do that too.</p>"
+  image:
+    path: http://lawntology.com/cockpit/storage/uploads/Yard-Waste.jpg
+  tags:
+  - yard waste
+  - clean up
+  category: services
+  url: "/yard-waste"
+  _mby: 5ac3f8c65e61adoc902899232
+  _by: 5ac3f8c65e61adoc902899232
+  _modified: 1523568210
+  _created: 1522869918
+  _id: 5ac5269ea90dedoc1699971093
+  published: true
+  _order: 5
+- title: History
+  published: true
+  description: 'We specialize in Lawn Care and Landscaping services. '
+  content: |-
+    <p>Lawntology is a veteran owned business local to Creve Coeur. Today people are putting in hours and working harder than ever.</p>
+    <p>We're doing the same, and we specialize in Lawn Care and Landscaping services.</p>
+    <p>We love our customers and support our local communities. We take pride in our work and provide the best services at competative rates. We service St Louis County and St Charles County for both commercial and residential.</p>
+  image: []
+  tags: ''
+  category: company
+  url: "/about#history"
+  _mby: 5ac3f8c65e61adoc902899232
+  _by: 5ac3f8c65e61adoc902899232
+  _modified: 1523478706
+  _created: 1522950857
+  _id: 5ac662c9becdbdoc1663844804
+  _order: 6
+- title: Job Opportunities
+  published: true
+  description: Careers with Lawntology
+  content: '<p style="text-align: center;">No Job Openings Currently.</p>'
+  image: []
+  tags: ''
+  category: company
+  url: "/about#jobs"
+  _mby: 5ac3f8c65e61adoc902899232
+  _by: 5ac3f8c65e61adoc902899232
+  _modified: 1523478706
+  _created: 1522950961
+  _id: 5ac66331ced2fdoc1427792711
+  _order: 7
+- title: Partners
+  published: true
+  description: Lawntology Business Partners
+  content: "<p>Currently we are looking for local partners.</p>"
+  image: []
+  tags: ''
+  category: company
+  url: "/about#partners"
+  _mby: 5ac3f8c65e61adoc902899232
+  _by: 5ac3f8c65e61adoc902899232
+  _modified: 1523478706
+  _created: 1522951051
+  _id: 5ac6638b8afe9doc1599267315
+  _order: 8
+- title: Pricing
+  published: true
+  description: Lawn Services Pricing information
+  content: |-
+    <p><strong>Grass Cutting</strong></p>
+    <p>Cutting, Trimming, and Edging your Lawn <br />to Perfection</p>
+    <p>Varies per yard <br />(Min. $10 per cut)</p>
+    <p>&nbsp;</p>
+    <p><strong>Yard Waste Removal</strong></p>
+    <p>haul away and Properly Dispose of your Yard waste</p>
+    <p>$25 half truck Load<br />$45 Full Truck Load<br />$60 Full Trailer Load</p>
+    <p>&nbsp;</p>
+    <p><strong>Yard Clean-up</strong></p>
+    <p>Pick up any yard waste including: Leaves, Cleaning landscape beds, or any Debris from your Lawn.</p>
+    <p>$40 / per man Hour</p>
+    <p>&nbsp;</p>
+    <p><strong>Trim Bushes and Shrubs</strong></p>
+    <p>Trim and prune bushes and Shrubs</p>
+    <p>$40 / Per man Hour <br />(Minumum 1 hour)</p>
+    <p>&nbsp;</p>
+    <p><strong>Mulch Delivery and Installation</strong></p>
+    <p>Using our best Double Cut Brown Mulch.<br />We offer dyed colored mulch per request.</p>
+    <p>$80 / per yard</p>
+    <p>$70 / per yard for more than 2+ yards</p>
+    <p>&nbsp;</p>
+    <p><strong>Gutters Cleaned </strong>(<em>1 story houses only</em>)</p>
+    <p>Clean Leaves and Debris out of Gutters</p>
+    <p>$45 / per cleaning</p>
+  image:
+    path: http://lawntology.com/cockpit/storage/uploads/blow-leaves.jpg
+  tags: ''
+  category: pricing
+  url: "/pricing"
+  _mby: 5ac3f8c65e61adoc902899232
+  _by: 5ac3f8c65e61adoc902899232
+  _modified: 1530628424
+  _created: 1522953061
+  _id: 5ac66b65e823cdoc1534923866
+  _order: 9
+- title: Homepage
+  published: true
+  description: Lawn Care Services
+  content: |-
+    <p>Lawntology is the <strong>Best Lawn Care Service</strong>. Get the best Residential and Commercial <strong>landscaping</strong> and <strong>Lawn Mowing</strong>.</p>
+    <!-- We handle the public and private properties every season. -->
+  image:
+    path: http://lawntology.com/cockpit/storage/uploads/homepage-promo.jpg
+  tags: ''
+  category: ''
+  url: "/homepage"
+  _mby: 5ac3f8c65e61adoc902899232
+  _by: 5ac3f8c65e61adoc902899232
+  _modified: 1525119272
+  _created: 1523052233
+  _id: 5ac7eec929b41doc559373424
+  _order: 10
+- title: Franchise
+  published: true
+  description: Franchise info Coming Soon!
+  content: |-
+    <p>&nbsp;Join the Lawntolgoy Team, Start a franchise today!</p>
+    <p>Lawntology Offers other lawn care companies to join our team and share in the lawntology system. We provide a large base of services and a network of jobs to supplement your current business.</p>
+    <p>&nbsp;</p>
+    <p>the lawntolgoy model is one of cooperation and service that builds on the success we each provide as lawn care operators.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  image:
+    path: http://lawntology.com/cockpit/storage/uploads/landscaping-promo.PNG
+  tags: ''
+  category: company
+  url: "/franchise"
+  _mby: 5ac3f8c65e61adoc902899232
+  _by: 5ac3f8c65e61adoc902899232
+  _modified: 1530630474
+  _created: 1523460198
+  _id: 5ace2866e800bdoc435402174
+  _order: 11
+- title: Contact Us
+  published: true
+  description: ''
+  content: |-
+    <h3>Get in touch with us.</h3>
+    <p><strong> CONTACT INFORMATION </strong> <br /> Our office hours are: <br /> <strong>Mon-Fri:</strong> 7:00am-5:00pm <br /> <strong>Saturday:</strong> 8:00am-12:00pm <br /> <strong>Sunday:</strong> Closed <br /> <strong>Email:</strong> <a href="mailto:info@lawntology.com"> info@lawntology.com </a> <br /> <strong>Telephone:</strong> <a href="tel:314-325-2466">(314) 325-2466 </a></p>
+  image:
+    path: http://lawntology.com/cockpit/storage/uploads/contactus-promo.PNG
+  tags: ''
+  category: support
+  url: "/contact-us"
+  _mby: 5ac3f8c65e61adoc902899232
+  _by: 5ac3f8c65e61adoc902899232
+  _modified: 1530629467
+  _created: 1523539130
+  _id: 5acf5cba090a5doc1940869745
+- title: About Us
+  published: true
+  description: We provide the best in quality Lawn Care and Landscaping services.
+  content: |-
+    <section id="history" class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12"><header>
+    <h2>Our History</h2>
+    </header>
+    <article>
+    <p><img style="float: left;" src="/storage/uploads/mulch.jpg" alt="" width="176" height="252" /><strong>Lawntology</strong> is a veteran owned business local to Creve Coeur. Today people are putting in hours and working harder than ever. We're doing the same, and we specialize in <strong>Lawn Care</strong> and <strong>Landscaping services</strong>. We love our customers and support our local communities.</p>
+    <p>We take pride in our work and provide the best services at competative rates. We service <strong>St. Louis County</strong> and <strong>St. Charles County</strong> for both commercial and residential.</p>
+    </article>
+    <footer></footer></section>
+    <section id="jobs" class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12"><header>
+    <h2>Jobs</h2>
+    </header>
+    <article>
+    <p>No Job Openings Currently.</p>
+    </article>
+    <footer></footer></section>
+    <section id="partners" class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12"><header>
+    <h2>Our Partners</h2>
+    </header>
+    <article>
+    <p>Currently we are looking for local partners. For more Information contact us at <a title="info@lawntology.com" href="mailto:info@lawntology.com">info@lawntology.com</a></p>
+    </article>
+    <footer></footer></section>
+  image:
+    path: http://lawntology.com/cockpit/storage/uploads/hedge-trimming.jpg
+  tags: ''
+  category: ''
+  url: "/about"
+  _mby: 5ac3f8c65e61adoc902899232
+  _by: 5ac3f8c65e61adoc902899232
+  _modified: 1524848783
+  _created: 1524848294
+  _id: 5ae356a62f23adoc572801289
+- title: Questions or Comments?
+  published: true
+  description: ''
+  content: ''
+  image: []
+  tags: ''
+  category: support
+  url: "/support"
+  _mby: 5ac3f8c65e61adoc902899232
+  _by: 5ac3f8c65e61adoc902899232
+  _modified: 1530630338
+  _created: 1530629939
+  _id: 5b3b8f33218afdoc845564812

@@ -1,0 +1,29 @@
+- title: Grass Cutting
+  description: Cutting, Trimming, and Edging your Lawn to Perfection
+  price: Varies per yard (Min. $10 per cut)
+  icon: leaf
+
+- title: Yard Waste Removal
+  description: Haul away and Properly Dispose of your Yard waste
+  price: $25 half truck Load  $45 Full Truck Load  $60 Full Trailer Load
+  icon: leaf
+
+- title: Yard Clean-up
+  description: Pick up any yard waste including Leaves, Cleaning landscape beds, or any Debris from your Lawn.
+  price: $40 / per man Hour
+  icon: leaf
+
+- title: Trim Bushes and Shrubs
+  description: Trim and prune bushes and Shrubs
+  price: $40 / Per man Hour (Minumum 1 hour)
+  icon: leaf
+
+- title: Mulch Delivery and Installation
+  description: Using our best Double Cut Brown Mulch. We offer dyed colored mulch per request.
+  price: $80 / per yard   $70 / per yard for more than 2+ yards
+  icon: leaf
+
+- title: Gutters Cleaned
+  description: Clean Leaves and Debris out of Gutters - (1 story houses only)
+  price: $45 / per cleaning
+  icon: leaf

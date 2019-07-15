@@ -1,0 +1,159 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "lit-html",
+        "scope": null,
+        "escapedName": "lit-html",
+        "name": "lit-html",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/home/deepmind/repos/lawntology"
+    ]
+  ],
+  "_from": "lit-html@latest",
+  "_hasShrinkwrap": false,
+  "_id": "lit-html@1.0.0-rc.2",
+  "_inCache": true,
+  "_location": "/lit-html",
+  "_nodeVersion": "11.2.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/lit-html_1.0.0-rc.2_1547082246563_0.27967091780905284"
+  },
+  "_npmUser": {
+    "name": "justinfagnani",
+    "email": "justin@fagnani.com"
+  },
+  "_npmVersion": "6.5.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "lit-html",
+    "scope": null,
+    "escapedName": "lit-html",
+    "name": "lit-html",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/lit-html/-/lit-html-1.0.0-rc.2.tgz",
+  "_shasum": "b9c904520fe005d349aa737a86d83645d97d5a89",
+  "_shrinkwrap": null,
+  "_spec": "lit-html",
+  "_where": "/home/deepmind/repos/lawntology",
+  "author": {
+    "name": "The Polymer Authors"
+  },
+  "bugs": {
+    "url": "https://github.com/Polymer/lit-html/issues"
+  },
+  "dependencies": {},
+  "description": "HTML template literals in JavaScript",
+  "devDependencies": {
+    "@types/chai": "^4.1.0",
+    "@types/mocha": "^5.2.0",
+    "@webcomponents/shadycss": "^1.5.2",
+    "@webcomponents/webcomponentsjs": "^2.0.4",
+    "chai": "^4.1.2",
+    "clang-format": "^1.2.4",
+    "mocha": "^5.2.0",
+    "rollup": "^0.64.1",
+    "rollup-plugin-filesize": "^4.0.1",
+    "rollup-plugin-terser": "^1.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.1",
+    "uglify-es": "^3.3.5",
+    "wct-mocha": "^1.0.0",
+    "web-component-tester": "^6.9.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dist": {
+    "integrity": "sha512-4bq34lhVmwWly1zBXicOBJLOwaWfjOVbchEEmFnZLuztxjh5wRd2WqV0URX8Q47MQ7PaIjn/eXyTRKsYhSAeRw==",
+    "shasum": "b9c904520fe005d349aa737a86d83645d97d5a89",
+    "tarball": "https://registry.npmjs.org/lit-html/-/lit-html-1.0.0-rc.2.tgz",
+    "fileCount": 135,
+    "unpackedSize": 475952,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcNpoHCRA9TVsSAnZWagAAdMAP/0NRrO7qUDRkJMnh/8Zv\n8o3hIXjJYp0lHbPAUB99grlHWlSmrJLw+DvOZGMkEM1C3S995f34eoHv68YQ\n5T1CaZasKu1s+vtINQ2ba3v+Re2UmG8wI5xG0FgjprDYtIJ/Cu+xSrpdrBDB\nztb7sAIjGZ1jCRa0Q12VMrmoLjcbG9FjRaY+1Hy18p1FWT5Xf1i2CjMYn3J0\ngavogEmU3nPab/0Hduai+s21irFUPQWlS+chxaGMnpyVWRHhKiSPKJbpJkLQ\nHdOvy69pWmGQYtfzz9roXKoaPsCgV5G7KLm0dqusuMEtt4DizfqEZus50jhZ\nB9DLwGjgrVCnq8saaKkO5WxIZA6FSOfQ2cn+PG47xPzpTnRnRY73dxgM9lUk\nJWbatVAcfNcz8VTn4GHJuXqJvWmb7He4WhjeCp+6K+pRZNI+CJO4FCwwesDd\nlLf/LOuA61+jrYbGqb5V43jb6gUKgiiGMU0TOxx8vlMDBnuU8tPM6eDJqQRj\n0zWkbTUBvuP92xZdaF+fdY/HsHlOBG6w4f4la1gzsBGgkEt6Vn6iMN7/rSWC\nTOP9/T2qyJKTHF/ZhG22wN/kbb9869StRnjkbLaZJYPmsEcRIa/Y/9So4PeN\nfDr167Eoi8uqgmVkp79X/r/aBwIxOC/bsUh3qOzvPoNXBu3md7Cxe/ookaLZ\nc5GA\r\n=XrCQ\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "gitHead": "822009c96869068e33a80fac0801802119f7dc94",
+  "homepage": "https://github.com/Polymer/lit-html#readme",
+  "license": "BSD-3-Clause",
+  "main": "lit-html.js",
+  "maintainers": [
+    {
+      "name": "aomarks",
+      "email": "aomarks@google.com"
+    },
+    {
+      "name": "azakus",
+      "email": "dfreedm2@gmail.com"
+    },
+    {
+      "name": "bicknellr",
+      "email": "bicknellr@gmail.com"
+    },
+    {
+      "name": "emarquez",
+      "email": "emarquez@google.com"
+    },
+    {
+      "name": "justinfagnani",
+      "email": "justin@fagnani.com"
+    },
+    {
+      "name": "keanulee",
+      "email": "npm@keanulee.com"
+    },
+    {
+      "name": "notwaldorf",
+      "email": "notwaldorf@gmail.com"
+    },
+    {
+      "name": "polymer-devs",
+      "email": "admin@polymer-project.org"
+    },
+    {
+      "name": "samli",
+      "email": "sam@sam.li"
+    },
+    {
+      "name": "sorvell",
+      "email": "sorvell@google.com"
+    },
+    {
+      "name": "tvanderlippe",
+      "email": "tvanderlippe@google.com"
+    },
+    {
+      "name": "usergenic",
+      "email": "brendan@usergenic.com"
+    }
+  ],
+  "module": "lit-html.js",
+  "name": "lit-html",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Polymer/lit-html.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "checksize": "rollup -c ; cat lit-html.bundled.js | gzip -9 | wc -c ; rm lit-html.bundled.js",
+    "format": "clang-format --version; find src test | grep '\\.js$\\|\\.ts$' | xargs clang-format --style=file -i",
+    "lint": "tslint --project ./",
+    "prepare": "npm run build",
+    "quicktest": "wct -l chrome -p --npm",
+    "test": "npm run build && npm run lint && wct --npm"
+  },
+  "typings": "lit-html.d.ts",
+  "version": "1.0.0-rc.2"
+}

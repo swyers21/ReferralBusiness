@@ -1,0 +1,39 @@
+<!-- Footer -->
+<footer id="footer">
+  <ul class="icons">
+    {% for socloc in site.social %}
+        {% if socloc[1] %}
+            {% if socloc[1] == 'email' %}
+              <li>
+                  <a target="_blank" href="{{ socloc[1] }}">
+                    <i class="icon-envelope" ></i>
+                </a>
+              </li>
+            {% else %}
+
+            <li>
+                <a target="_blank" href="{{ socloc[1] }}">
+                  <i class="icon-{{ socloc[0] }}" ></i>
+              </a>
+            </li>
+            {% endif %}
+
+        {% endif %}
+    {% endfor %}
+  </ul>
+  <ul class="copyright">
+    <li>&copy; {% assign thisyear = site.time | date: "%Y" %}
+    {% if site.first_published %}
+      {% capture diff %}{{ site.first_published | minus:thisyear }}{% endcapture %}
+      {% if diff contains '-' %}{{ site.first_published }},{% endif %}
+    {% endif %}
+    {{ thisyear }}
+    {% if site.owner %}{{ site.owner }}{% else %}{{ site.title }}{% endif %}</li>
+    <li>
+        <a href="tel:{{ site.phone }}">
+          <i class="icon-phone" ></i>
+          {{ site.phone }}
+      </a>
+    </li>
+  </ul>
+</footer>

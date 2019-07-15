@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include app-header.html %}
+    <section id="{{page.app}}" class="container light app">
+      <div class="row app">
+
+            <div class="col s12 m2 l3 hide-on-small-only user-menu hover-scro ll print-hide">
+              {% include app-nav.html %}
+            </div>
+
+            <div class="col s12 m10 l9 no-gutters bg-white print-hide">
+                <!-- App Bread Crumbs -->
+                <div class="col s12 breadcrumb-wrapper">
+                    {% assign crumbs = page.url | remove:'/dashboard.html' | split: '/' %}
+                      <a class="breadcrumb" href="/dashboard/">Dashboard</a>
+
+                    {% for crumb in crumbs offset: 1 %}
+                      {% if forloop.last %}
+                        / {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
+                      {% else %}
+                        <a class="breadcrumb" href="{% assign crumb_limit = forloop.index | plus: 1 %}
+                          {% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}
+
+                          {% endfor %}">
+                          {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
+                        </a>
+                      {% endif %}
+                    {% endfor %}
+                </div>
+              </div>
+              <div class="col s12 m10 l9 bg-white ">
+                <article id="main">
+                  <div class="row">
+                      <div class="col s12 m6 l7">
+                          <h1>{{ page.title }}</h1>
+                      </div>
+                      <div class="col s12 m6 l5">
+                        {% if page.modal %}
+                           <div class="col s6 m2">
+                             <button class="table-refresh btn"> <i class="icon-refresh"></i> </button>
+                           </div>
+                           <div class="col s6 m10">
+                              <button class="waves-effect waves-light btn modal-trigger add-node" data-target="new-{{page.title}}-modal">
+                                <span class="icon-add "></span>
+                                <span class="hide-on-small-only" > Add {{ page.singular }} </span>
+                              </button>
+                          </div>
+                        {% endif %}
+                        {% if page.seperatePage %}
+                         <div class="col s6 m2">
+                           <button class="table-refresh btn text-white"> <span class="icon-refresh"></span> </button>
+                         </div>
+                         <div class="col s6 m9">
+                            <a href="/{{page.app}}/new.html" class="waves-effect waves-light btn modal-trigger add-node" >
+                              <i class="icon-add"></i>
+                              <span class="hide-on-small-only" >
+                                Add {{ page.singular }}
+                              </span>
+                            </a>
+                        </div>
+                        {% endif %}
+                        {% if page.printable %}
+                            <div class="col s12 m12 print-hide">
+                                <a href="javascript:window.print()" class="waves-effect waves-light btn print-btn blue text-white">
+                                  <i class="icon-print"></i>
+                                </a>
+                                <a href="#" class="waves-effect waves-light btn download-btn blue text-white">
+                                  <i class="icon-download"></i>
+                                </a>
+                                <a href="/assessments/new" id="edit-assessment" class="btn red text-white">
+                                  <i class="icon-edit "></i>
+                                </a>
+                                <!--  /assessments/-->
+                                <a href="#" id="submitassessment" class="btn text-white">
+                                  <i class="icon-check left"></i>
+                                  Save
+                                </a>
+                            </div>
+                        {% endif %}
+                      </div>
+                  </div>
+                        {{ content }}
+                </article>
+
+
+        </div>
+      </div>
+    </section>
+    {% include footer.html %}
+    {% include form-modal.html %}
+
+  </body>
+
+  <script type="text/javascript" src="/webpack/app.js" rel="prefetch"></script>
+  <!-- <script type="text/javascript">
+    $(document).ready(function() {  });
+  </script> -->
+</html>
