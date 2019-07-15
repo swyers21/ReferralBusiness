@@ -1,11 +1,9 @@
 # theme: jekyll-theme-cayman
-
 # Welcome to Jekyll!
 #App settings
 destination: public
 source: src/jekyll
-exclude: ['node_modules']
-
+# exclude: ['node_modules']
 # Site settings
 title: Christina Swyers Living
 brandname: Christina Swyers Living
@@ -57,7 +55,6 @@ social:
   #forumbee:
   #tripadvisor:
   #amazon:
-
 # Build settings
 markdown: kramdown
 #sass:
