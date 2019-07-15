@@ -16,10 +16,10 @@ phone:  314-629-5867
 first_published: 2019 # if migrating another site, the year of your first publish
 email: Christina@christinaswyersliving.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://terachain.com" # the base hostname & protocol for your site
-logo: "/images/logo.png"
+# url: "http://terachain.com" # the base hostname & protocol for your site
+# logo: "/images/logo.png"
 social:
-  twitter: https://twitter.com/terachain
+  # twitter: https://twitter.com/terachain
   facebook: https://www.facebook.com/ChristinaSwyersLiving/
   github: https://swyers21.github.io/ReferralBusiness/
   # linkedin: https://linkedin.com/in/<username>
