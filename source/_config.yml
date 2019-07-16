@@ -1,0 +1,58 @@
+# Site settings
+title: Christina Swyers Living
+brandname: Christina Swyers Living
+description: Referral Business
+owner: Convergance Group
+phone: 314-629-5867
+first_published: 2019 # if migrating another site, the year of your first publish
+copyright_year: 2023
+email: Christina@christinaswyersliving.com
+destination: ../site/
+url: "http://christinaswyersliving.com" # the base hostname & protocol for your site
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "http://terachain.com" # the base hostname & protocol for your site
+# logo: "/images/logo.png"
+social:
+  # twitter: https://twitter.com/terachain
+  facebook: https://www.facebook.com/ChristinaSwyersLiving/
+  github: https://swyers21.github.io/ReferralBusiness/
+  # linkedin: https://linkedin.com/in/<username>
+  # google-plus-square: https://plus.google.com/u/0/+<lawntology>
+  # email: /contact/
+  #flickr:
+  instagram: https://www.instagram.com/christinaswyersliving/
+  youtube: https://www.youtube.com/channel/UCfzYHBeVR7XYV3r3gt1oN9w
+  #spotify:
+  #stack-overflow:
+  #vimeo:
+  #reddit:
+  #stubleupon:
+  #delicious:
+  #pied-piper:
+  #digg:
+  #soundcloud:
+  #deviantart:
+  #angellist:
+  #tumblr-square:
+  #stackexchange:
+  #weibo:
+  #trello:
+  #foursquare:
+  #linux:
+  #bitbucket-square:
+  #vk:
+  #slack:
+  #vine:
+  #weixin:
+  #yelp:
+  #skyatlas:
+  #leanpub:
+  #connectdevelop:
+  #ils:
+  #forumbee:
+  #tripadvisor:
+  #amazon:
+# Build settings
+markdown: kramdown
+#sass:
+#  style: compressed
