@@ -9,7 +9,7 @@ copyright_year: 2023
 email: Christina@christinaswyersliving.com
 destination: ../docs
 url: "http://christinaswyersliving.com" # the base hostname & protocol for your site
-baseurl: "/" # the subpath of your site, e.g. /blog
+# baseurl: "/" # the subpath of your site, e.g. /blog
 # url: "http://terachain.com" # the base hostname & protocol for your site
 # logo: "/images/logo.png"
 social:
