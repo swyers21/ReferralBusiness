@@ -32,7 +32,7 @@ $on-laptop:        800px;
     }
 }
 
-@import "layout", "syntax-highlighting", "materialize";
+@import  "base", "layout", "syntax-highlighting", "materialize";
 
 html {
   font-family:libre baskerville, serif;
