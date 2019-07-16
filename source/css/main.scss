@@ -26,13 +26,13 @@ $on-palm:          600px;
 $on-laptop:        800px;
 
 
-// @mixin media-query($device) {
-//     @media screen and (max-width: $device) {
-//         @content;
-//     }
-// }
-//
-// @import  "base", "layout", "syntax-highlighting", "materialize";
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@import  "base", "layout", "syntax-highlighting", "materialize";
 
 html {
   font-family:libre baskerville, serif;
