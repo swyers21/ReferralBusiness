@@ -3,10 +3,10 @@
   <channel>
     <title>Christina Swyers Living</title>
     <description>Referral Business</description>
-    <link>http://localhost:4000//</link>
-    <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 16 Jul 2019 14:35:15 -0500</pubDate>
-    <lastBuildDate>Tue, 16 Jul 2019 14:35:15 -0500</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 16 Jul 2019 16:01:29 -0500</pubDate>
+    <lastBuildDate>Tue, 16 Jul 2019 16:01:29 -0500</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -24,8 +24,8 @@
 
 </description>
         <pubDate>Wed, 01 Jul 2015 08:33:04 -0500</pubDate>
-        <link>http://localhost:4000//jekyll/update/2015/07/01/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://localhost:4000//jekyll/update/2015/07/01/welcome-to-jekyll.html</guid>
+        <link>http://localhost:4000/jekyll/update/2015/07/01/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/update/2015/07/01/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
