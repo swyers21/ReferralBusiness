@@ -73,30 +73,39 @@
       <div class="col s12">
         <!-- <h5 class="black-text">Ready to join our referral network?</h5> -->
         <p class="black-text center">Ready to join our referral network?</p>
-        <form id="comp-jptjwi4dform" class="style-jptk3n93form">
+        <form id="referral-form" class=" ">
           <div class="col m6 s12">
-            <input type="text" style="padding-left:12px" value="" placeholder="First Name" maxlength="100" class=" " id=" ">
+            <input type="text" name="firstname" value="" placeholder="First Name" maxlength="100" class=" " id=" ">
           </div>
           <div class="col m6 s12">
-            <input type="text" style="padding-left:12px" value="" placeholder="Last Name" maxlength="100" class=" " id=" ">
+            <input type="text"  name="lastname"  value="" placeholder="Last Name" maxlength="100" class=" " id=" ">
           </div>
           <div class="col m6 s12">
-            <input type="email" style="padding-left:12px" value="" required="" placeholder="Email" maxlength="250" class="" id="">
+            <input type="email" name="email"   value="" required="" placeholder="Email" maxlength="250" class="" id="">
           </div>
           <div class="col m6 s12">
-            <input type="text" style="padding-left:12px" value="" placeholder="Company" maxlength="100" class=" " id="">
+            <input type="text" name="company"   value="" placeholder="Company" maxlength="100" class=" " id="">
           </div>
           <div class="col m6 s12">
-            <input type="tel" style="padding-left:12px" value="" placeholder="Phone" maxlength="50" class=" " id="">
+            <input type="tel"  name="phone"  value="" placeholder="Phone" maxlength="50" class=" " id="">
           </div>
           <div class="col m6 s12">
-            <input type="text" style="padding-left:12px" value="" placeholder="5 zip codes you work in" class="tokenize" id="zipcodes">
+              <input type="numbers" id="exist-values" class="tagged form-control zipcodes" data-removeBtn="true" name="zipcodes" value=" " placeholder="Top 5 zip codes you work in">
           </div>
+          <input type="hidden" name="utf8" value="✓">
           <div class="col s12">
-           <input type="button" name="Join Us" value="Join Us" class="col s12 white-text" onclick="formsubmit()">
+           <input type="button" name="Join Us" value="Join Us" class="col s12 white-text form-submit"   >
           </div>
           <p class="black-text hide">Thanks for submitting!</p>
         </form>
+
+          <!--
+            <button id="destroy">destroy</button>
+            <button id="add">add tags</button>
+            <button id="addArr">add tags array</button>
+            <button id="clear">clear tags</button>
+            <button id="get">get taggs</button>
+          -->
       </div>
       <div class="col l12 s12 center">
         <h4> Real Estate Referral Partners </h4>
@@ -145,7 +154,8 @@
   </body>
 
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/bin/materialize.js"></script>
+<script src="js/bin/materialize.min.js"></script>
+<script src="js/tokens.js"></script>
 <script src="js/init.js"></script>
 
 
