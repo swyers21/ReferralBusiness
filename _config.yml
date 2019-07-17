@@ -1,4 +1,5 @@
 # Site settings
+# theme: jekyll-theme-primer
 title: Christina Swyers Living
 brandname: Christina Swyers Living
 description: Referral Business
@@ -7,9 +8,9 @@ phone: 314-629-5867
 first_published: 2019 # if migrating another site, the year of your first publish
 copyright_year: 2023
 email: Christina@christinaswyersliving.com
-destination: ../site
+# destination: ../public/
 url: "http://christinaswyersliving.com" # the base hostname & protocol for your site
-baseurl: "/" # the subpath of your site, e.g. /blog
+# baseurl: "/" # the subpath of your site, e.g. /blog
 # url: "http://terachain.com" # the base hostname & protocol for your site
 # logo: "/images/logo.png"
 social:
