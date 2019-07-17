@@ -1,152 +1,19 @@
-<!DOCTYPE html>
-<html>
-<html lang="en">
-  <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Christina Swyers Living</title>
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="/css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
-
-  <body>
-    <nav class="black" role="navigation">
-  <div class="nav-wrapper container">
-    <a id="logo-container" href="/index.html" class="brand-logo hide">Christina Swyers Living</a>
-    <ul class="right hide">
-      
-      
-      
-      
-      
-      
-      
-      
-      <li><a class="page-link" href="//posts.html">Blog</a></li>
-      
-      
-      
-      
-    </ul>
-
-    <ul id="nav-mobile" class="side-nav">
-      
-      <li><a href="#"></a></li>
-      
-      <li><a href="#"></a></li>
-      
-      <li><a href="#"></a></li>
-      
-      <li><a href="#">Blog</a></li>
-      
-      <li><a href="#"></a></li>
-      
-    </ul>
-    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons hide">menu</i></a>
-  </div>
-</nav>
-
-    <div class="page-content">
-      <div class="section no-pad-bot" id="index-banner">
-        <div class="container">
-        <div class="home">  
+---
+layout: default
+title: "Blog"
+---
+<div class="home">  
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
-    
+    {% for post in site.posts %}
       <li>
-        <span class="post-meta">Jul 1, 2015</span>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
-          <a class="post-link" href="//jekyll/update/2015/07/01/welcome-to-jekyll.html">Welcome to Jekyll!</a>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
       </li>
-    
+    {% endfor %}
   </ul>
 </div>
-
-        
-  <div class="container">
-    <div class="row">
-      <div class="col s12">
-        <!-- <h5 class="black-text">Ready to join our referral network?</h5> -->
-        <p class="black-text center">Ready to join our referral network?</p>
-        <form id="comp-jptjwi4dform" class="style-jptk3n93form">
-          <div class="col m6 s12">
-            <input type="text" style="padding-left:12px" value="" placeholder="First Name" maxlength="100" class="has-custom-focus style-jqv025ruinput" id="comp-jptkcriyinput">
-          </div>
-          <div class="col m6 s12">
-            <input type="text" style="padding-left:12px" value="" placeholder="Last Name" maxlength="100" class="has-custom-focus style-jvmnhdlzinput" id="comp-jvmnhdf2input">
-          </div>
-          <div class="col m6 s12">
-            <input type="email" style="padding-left:12px" value="" required="" placeholder="Email" maxlength="250" class="has-custom-focus style-jqv02fjpinput" id="comp-jptkcumvinput">
-          </div>
-          <div class="col m6 s12">
-            <input type="text" style="padding-left:12px" value="" placeholder="Company" maxlength="100" class="has-custom-focus style-jvmnhdlzinput" id="comp-jvmnndolinput">
-          </div>
-          <div class="col m6 s12">
-            <input type="tel" style="padding-left:12px" value="" placeholder="Phone" maxlength="50" class="has-custom-focus style-jvmnhdlzinput" id="comp-jvmnhknfinput">
-          </div>
-          <div class="col m6 s12">
-            <input type="number" style="padding-left:12px" value="" placeholder="5 zip codes you work in" class="has-custom-focus style-jvmnhdlzinput" id="comp-jvmnhq6rinput"><p style="display:none" id="comp-jvmnhq6rmessage" class="style-jvmnhdlzmessage"></p>
-          </div>
-          <div class="col s12">
-           <input type="button" name="Join Us" value="Join Us" class="col s12 white-text">
-          </div>
-          <p class="black-text hide">Thanks for submitting!</p>
-        </form>
-      </div>
-      <div class="col l12 s12 center">
-        <h4> Real Estate Referral Partners </h4>
-      </div>
-    </div>
-  </div>
-
-      </div>
-    </div>
-  </div>
-    <footer class="page-footer black">
-  <div class="container">
-    <div class="row">
-      <div class="col s12 white-text center">
-        <h5 class=" "> CONTACT</h5>
-
-        <div class="col l6 s12">
-          <p>Telephone: <a href="tel:314-629-5867" > 314-629-5867 </a></p>
-        </div>
-        <div class="col l6 s12">
-          <p>Email: <a href="mailto:Christina@christinaswyersliving.com" > Christina@christinaswyersliving.com </a></p>
-        </div>
-        <div class="row">
-          <h5 class=" "> FOLLOW US</h5>
-
-          <div class="col l4 s12">
-            <a href="https://www.facebook.com/ChristinaSwyersLiving/" > Facebook </a>
-          </div>
-          <div class="col l4 s12">
-            <a href="https://www.instagram.com/christinaswyersliving/" >  Instagram </a>
-          </div>
-          <div class="col l4 s12">
-            <a href="https://www.youtube.com/channel/UCfzYHBeVR7XYV3r3gt1oN9w" > Youtube </a>
-          </div>
-       </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-copyright">
-    <div class="container">
-      © 2023 Christina Swyers Living built by <a class="white-text text-lighten-3" href="http://localhost:4000">http://localhost:4000</a>
-    </div>
-  </div>
-</footer>
-
-  </body>
-
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/bin/materialize.js"></script>
-<script src="js/init.js"></script>
-
-
-</html>

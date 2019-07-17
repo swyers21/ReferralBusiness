@@ -1,17 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Christina Swyers Living</title>
-    <description>Referral Business</description>
-    <link>http://localhost:4000//</link>
-    <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 17 Jul 2019 08:52:00 -0500</pubDate>
-    <lastBuildDate>Wed, 17 Jul 2019 08:52:00 -0500</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;h1 id=&quot;isnt-this-awesome&quot;&gt;&lt;strong&gt;Isn’t this awesome?&lt;/strong&gt;&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-17T09:25:06-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Christina Swyers Living</title><subtitle>Referral Business</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/source/jekyll/update/2015/07/01/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2015-07-01T08:33:04-05:00</published><updated>2015-07-01T08:33:04-05:00</updated><id>http://localhost:4000/source/jekyll/update/2015/07/01/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/source/jekyll/update/2015/07/01/welcome-to-jekyll.html">&lt;h1 id=&quot;isnt-this-awesome&quot;&gt;&lt;strong&gt;Isn’t this awesome?&lt;/strong&gt;&lt;/h1&gt;
 
 &lt;p&gt;If this doesn’t look right, you’re probably trying to view this page without running &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt; first.&lt;/p&gt;
 
@@ -20,19 +7,4 @@
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Materialize.css + Jekyll = &amp;lt;3&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Curcible is okay too I guess.&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-</description>
-        <pubDate>Wed, 01 Jul 2015 08:33:04 -0500</pubDate>
-        <link>http://localhost:4000//jekyll/update/2015/07/01/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://localhost:4000//jekyll/update/2015/07/01/welcome-to-jekyll.html</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-  </channel>
-</rss>
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><summary type="html">Isn’t this awesome?</summary></entry></feed>
