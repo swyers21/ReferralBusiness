@@ -20,6 +20,16 @@
 
     function formSubmit(){
      console.log('called form Submit');
+     var validator = $("#referral-form input");
+     var listArray = [];
+
+
+     for (var i = 0; i < validator.length; i++) {
+       listArray.push(validator[i].classList)
+       // console.log( validator[i].classList );
+     }
+     console.log(listArray.values);
+
       var $form = $("#referral-form");
       var data = getFormData($form);
       // getTags();
