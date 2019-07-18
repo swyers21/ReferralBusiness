@@ -20,7 +20,7 @@
                 alert('Form Submission Failed, Please try again.');
                 clearForm();
               } else {
-                console.log( 'Data saved successfully!' );
+                alert( 'Form Submitted successfully!' );
                 clearForm();
               }
           });
