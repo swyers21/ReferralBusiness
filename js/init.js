@@ -17,11 +17,17 @@
           zipcodes: zipcodes
         }, function(error) {
               if (error) {
-                console.log('The write failed...');
+                alert('Form Submission Failed, Please try again.');
+                clearForm();
               } else {
                 console.log( 'Data saved successfully!' );
+                clearForm();
               }
           });
+    }
+    function clearForm(){
+      $("#referral-form input").val('');
+      clearTokens();
     }
 
     function getFormData($form){

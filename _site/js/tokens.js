@@ -223,7 +223,7 @@
       wrap.insertBefore(tag, field);
       tagsArray.push(name);
       field.value = '';
-      el.value += (el.value === '') ? name : ',' + name;
+      el.value += (el.value === '') ? name : ' ' + name;
     }
 
     function removeTag() {
@@ -241,7 +241,7 @@
 
       wrap.removeChild(tag);
 
-      el.value = tagsArray.join(',');
+      el.value = tagsArray.join(' ');
     }
 
     init();
@@ -298,6 +298,10 @@
 
 // Use
 var tags = new Tags('.tagged');
+
+function clearTokens(){
+   tags.clearTags();
+}
 
 // $('.tag-input').on('blur', function(e){
 //   var tags = new Tags('#referral-form .tagged');
