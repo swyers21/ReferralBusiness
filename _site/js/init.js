@@ -43,22 +43,33 @@
 
     function formSubmit(database){
      console.log('called form Submit');
+
+
      var validator = $("#referral-form input");
      var listArray = [];
-
-
      for (var i = 0; i < validator.length; i++) {
-       listArray.push(validator[i].classList)
-       // console.log( validator[i].classList );
+       const iterator = validator[i].classList.values();
+        for (const value of iterator) {
+          listArray.push(value);
+        }
      }
-     console.log(listArray.values);
+     for (var i = 0; i < listArray.length; i++) {
+       // console.log(listArray[i] );
+       if(listArray[i] ===  'valid'){
+         console.log('found valid input.');
+       }else if(listArray[i] ===  'invalid'){
+         console.log('found invalid input.');
+       }else{
+         console.log('no valid input found.');
+       }
+     }
+
 
       var $form = $("#referral-form");
       var data = getFormData($form);
+
       var date = new Date();
       var submissionDate = date.toString();
-      // console.log(submissionDate);
-      // console.log( data );
 
       setTimeout(function () {
         writeFormData(submissionDate, data.company, data.email, data.firstname,  data.lastname, data.phone, data.zipcodes, database );

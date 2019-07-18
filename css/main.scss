@@ -62,12 +62,12 @@ input {
 input::placeholder {
     color: #2B2B2B;
 }
-input[type="button"] {
+button{
   line-height: 3em;
   border: 0;
   background-color:  #2b2b2b !important;
 }
-input[type="button"]:hover {
+button:hover {
   background-color:  #000 !important;
 }
 strong { font-weight: bold; }
