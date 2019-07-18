@@ -4,6 +4,26 @@
 
     $('.button-collapse').sideNav();
 
+
+    function writeFormData(submissionDate, company, email, firstname,  lastname, phone, zipcodes, database) {
+
+        database.ref('christinaswyersliving/referrals').push({
+          date: submissionDate,
+          company: company,
+          email:  email,
+          firstname: firstname,
+          lastname: lastname,
+          phone: phone,
+          zipcodes: zipcodes
+        }, function(error) {
+              if (error) {
+                console.log('The write failed...');
+              } else {
+                console.log( 'Data saved successfully!' );
+              }
+          });
+    }
+
     function getFormData($form){
         var unindexed_array = $form.serializeArray();
         var indexed_array = {};
@@ -14,11 +34,8 @@
 
         return indexed_array;
     }
-    function storeData(data){
-      console.log(data);
-    }
 
-    function formSubmit(){
+    function formSubmit(database){
      console.log('called form Submit');
      var validator = $("#referral-form input");
      var listArray = [];
@@ -32,17 +49,37 @@
 
       var $form = $("#referral-form");
       var data = getFormData($form);
-      // getTags();
-      // console.log( tags.getTags() );
-      storeData(data);
-   }
+      var date = new Date();
+      var submissionDate = date.toString();
+      // console.log(submissionDate);
+      // console.log( data );
 
+      setTimeout(function () {
+        writeFormData(submissionDate, data.company, data.email, data.firstname,  data.lastname, data.phone, data.zipcodes, database );
+      }, 800);
+   }
 
     $( document ).ready(function() {
         console.log( "ready!" );
 
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyDvpDVvXH5NGZRrq7FkyUUDQU6agIG0aNw",
+          authDomain: "referralbusiness-6e88b.firebaseapp.com",
+          databaseURL: "https://referralbusiness-6e88b.firebaseio.com",
+          projectId: "referralbusiness-6e88b",
+          storageBucket: "",
+          messagingSenderId: "19726957108",
+          appId: "1:19726957108:web:6dc53d1a7cd62650"
+        };
+
+        // // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // Get a reference to the database service
+        var database = firebase.database();
        $('.form-submit').on( 'click', function(){
-            formSubmit()
+            formSubmit(database)
        });
 
     });
