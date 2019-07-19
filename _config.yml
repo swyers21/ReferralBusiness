@@ -53,9 +53,12 @@ social:
   #forumbee:
   #tripadvisor:
   #amazon:
+exclude:
+  - package.json
+  - node_modules
+  - gulpfile.js 
 # Build settings
 markdown: kramdown
 #sass:
 #  style: compressed
-
 theme: jekyll-theme-primer

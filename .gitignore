@@ -1,2 +1,4 @@
-
 hidden
+credentials.yml
+*.sw*
+node_modules
