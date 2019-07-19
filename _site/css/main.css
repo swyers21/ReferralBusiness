@@ -4165,6 +4165,8 @@ input::placeholder { color: #2B2B2B; }
 
 button { line-height: 3em; border: 0; background-color: #2b2b2b !important; }
 
+.tag button { line-height: 2em; background-color: #4f95d0 !important; }
+
 button:hover { background-color: #000 !important; }
 
 strong { font-weight: bold; }
