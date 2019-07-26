@@ -4133,26 +4133,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .picker--time .picker__box { font-size: 1em; background: #f2f2f2; padding: 0; }
 
 @media (min-height: 40.125em) { .picker--time .picker__box { margin-bottom: 5em; } }
-.highlight { margin-bottom: 15px; }
-
-/** Blockquotes */
-blockquote { color: #828282; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 18px; letter-spacing: -1px; font-style: italic; }
-blockquote > :last-child { margin-bottom: 0; }
-
-/** Code formatting */
-pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color: #eef; }
-
-code { padding: 1px 5px; }
-
-pre { padding: 8px 12px; overflow-x: scroll; }
-pre > code { border: 0; padding-right: 0; padding-left: 0; }
-
-/** Clearfix */
-.footer-col-wrapper:after { content: ""; display: table; clear: both; }
-
-/** Icons */
-.icon > svg { display: inline-block; width: 16px; height: 16px; vertical-align: middle; }
-
 html { font-family: libre baskerville, serif; letter-spacing: 0.1em; }
 
 nav { height: 80px !important; }
